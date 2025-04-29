@@ -16,6 +16,20 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Some of my ongoing work.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "public GitHub repositories.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
         },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
           title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
@@ -41,7 +55,22 @@ ninja.data = [{
       },{id: "news-we-will-be-presenting-at-the-2025-forecasting-amp-amp-markets-workshopt-organized-by-esig-in-nashville-tn-find-us-in-session-4a-advancements-in-forecasting-from-ders-and-data-centers-to-new-methods-for-wind-and-solar-forecasting-on-jan-26",
           title: 'We will be presenting at the 2025 Forecasting &amp;amp;amp; Markets Workshopt organized by...',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "projects-al-based-energy-forecast",
+          title: 'Al-based Energy Forecast',
+          description: "Day-ahead probabilistic forecast of wind and solar electricity generation and demand",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_project/";
+            },},{id: "projects-india-energy-transition",
+          title: 'India Energy Transition',
+          description: "India&#39;s Electricity system Transition towards low-carbon emission",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
+            },},{id: "projects-girasol-machine",
+          title: 'Girasol Machine',
+          description: "Multi-spectra sky imager for solar nowcasting",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
@@ -60,28 +89,28 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/https://www.linkedin.com/in/guillermo-terr%C3%A9n-serrano-41136359/", "_blank");
+          window.open("https://www.linkedin.com/in/guillermo-terr%C3%A9n-serrano-41136359/", "_blank");
         },
       },{
         id: 'social-orcid',
         title: 'ORCID',
         section: 'Socials',
         handler: () => {
-          window.open("https://orcid.org/https://orcid.org/0000-0002-8688-2299", "_blank");
+          window.open("https://orcid.org/0000-0002-8688-2299", "_blank");
         },
       },{
         id: 'social-custom_social',
         title: 'Custom_social',
         section: 'Socials',
         handler: () => {
-          window.open("https://emlab.ucsb.edu/", "_blank");
+          window.open("https://emlab.ucsb.edu/about/our-team/guillermo-terren-serrano", "_blank");
         },
       },{
         id: 'social-custom_social_1',
         title: 'Custom_social_1',
         section: 'Socials',
         handler: () => {
-          window.open("https://cetlab.es.ucsb.edu/", "_blank");
+          window.open("https://cetlab.es.ucsb.edu/people/guillermo-terr%C3%A9n-serrano", "_blank");
         },
       },{
       id: 'light-theme',

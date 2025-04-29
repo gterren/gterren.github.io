@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Environmental Studies Program & Environmental Markets Lab (emLab), <a href='#'>University of California Santa Barbara</a>. 
+subtitle: Environmental Studies, <a href='https://www.ucsb.edu/'>University of California Santa Barbara</a>. 
 
 profile:
   align: right
@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>B4344 floor 4L</p>
     <p>4312 Bren Hall, UC Santa Barbara</p>
-    <p>Santa Barbara, California 93106-4160</p>
+    <p>Santa Barbara, CA93106</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,6 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Postdoctoral Climate Innovation Fellow affiliated with the Environmetal Studies Program at the University of California Santa Barbara in the US. I received a Bachelor's degree in Technical Industrial Engineering from the Universidad de Zaragoza in Spain, and a Ph.D. in Electrical Engineering from Electrical and Computer Engineering department at the University of New Mexico in the US. 
 
-My research interets are electricity markets, power grids, macro-energy systems and energy forecast. In particular, I focus on operating reserves and planning reserve margin estimation combining probabilistic machine learning, optimization, and remote sensing.
+I am a <a href='https://www.cnsi.ucsb.edu/programs/climate-innovation-fellows'>Climate Innovation Postdoctoral Fellow</a> affiliated with the <a href='https://es.ucsb.edu/'>Environmetal Studies Program</a> and the <a href='https://emlab.ucsb.edu/'>Environmental Markets Lab (emLab)</a> at the <a href='https://www.ucsb.edu/'>University of California Santa Barbara</a> in the United States. I received a Bachelor's degree in Technical Industrial Engineering from the <a href='https://www.unizar.es/'>Escuela de Ingeniería y Arquitecture</a> at the <a href='https://www.unizar.es/'>Universidad de Zaragoza</a> in Spain, and a Ph.D. in Electrical Engineering from the <a href='http://www.ece.unm.edu/'>Electrical and Computer Engineering Department</a> at the <a href='https://www.unm.edu/'>University of New Mexico</a> in the United States. 
+
+My research interests include electricity markets, power grids, macro-energy systems, and energy forecasts. In particular, I focus on short-term operating reserves and long-term planning reserve margin estimation, combining probabilistic machine learning, optimization, and remote sensing.

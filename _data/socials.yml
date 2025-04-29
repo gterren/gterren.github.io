@@ -20,10 +20,10 @@ github_username: gterren # your GitHub user name
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-linkedin_username: https://www.linkedin.com/in/guillermo-terr%C3%A9n-serrano-41136359/ # your LinkedIn user name
+linkedin_username: guillermo-terr%C3%A9n-serrano-41136359/ # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
-orcid_id: https://orcid.org/0000-0002-8688-2299 # your ORCID ID
+orcid_id: 0000-0002-8688-2299 # your ORCID ID
 # osf_id: # your OSF ID
 # pinterest_id: # your pinterest id
 # publons_id: # your ID on Publons
@@ -48,8 +48,8 @@ orcid_id: https://orcid.org/0000-0002-8688-2299 # your ORCID ID
 custom_social: # can be any name here other than the ones already defined above
   logo: https://avatars.githubusercontent.com/u/48566538?s=200&v=4
   title: emLab
-  url: https://emlab.ucsb.edu/
+  url: https://emlab.ucsb.edu/about/our-team/guillermo-terren-serrano
 custom_social_1: # can be any name here other than the ones already defined above
   logo: https://avatars.githubusercontent.com/u/51009188?s=200&v=4
   title: CETlab
-  url: https://cetlab.es.ucsb.edu/
+  url: https://cetlab.es.ucsb.edu/people/guillermo-terr%C3%A9n-serrano
