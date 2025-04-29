@@ -7,13 +7,13 @@
 #   color: "#00369f"
 
 "JOURNAL":
-  color: "00369f"
+    color: "#9FE2BF"
 
 "THESIS":
-    url: #
+    color: "#89CFF0"
   
-"DISSERTAION":
-    url: #
+"DISSERTATION":
+    color: "#89CFF0"
     
 "PROCEEDINGS":
-  color: "#009f36"
+    color: "#DDA0DD"

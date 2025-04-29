@@ -1,12 +1,12 @@
-"manel":
-  - firstname: ["Manel Martı́nez-Ramón"]
+"martinez-ramon":
+  - firstname: ["Manel Martı́nez-Ramón", "Manel"]
     url: https://ece.unm.edu/faculty-staff/electrical-and-computer/manel-martinez-ramon.html
 
-"ranjit":
-  - firstname: ["Ranjit Deskmukh"]
+"deshmukh":
+  - firstname: ["Ranjit Deshmukh", "Ranjit"]
     url: https://es.ucsb.edu/people/ranjit-deshmukh
 
-"mike":
-  - firstname: ["Michael Ludkovski", "Michael Ludkovski"]
+"ludkovski":
+  - firstname: ["Michael Ludkovski", "Michael"]
     url: https://www.pstat.ucsb.edu/people/michael-ludkovski
 

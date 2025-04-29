@@ -62,7 +62,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project/";
             },},{id: "projects-india-energy-transition",
           title: 'India Energy Transition',
-          description: "India&#39;s Electricity system Transition towards low-carbon emission",
+          description: "India&#39;s electricity system transition towards low-carbon emission",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-girasol-machine",
