@@ -3,7 +3,7 @@ layout: page
 title: Girasol Machine
 description: Multi-spectra sky imager for solar nowcasting
 img: images/3_cover.png
-importance: 2
+importance: 3
 category: work
 related_publications: true
 ---
