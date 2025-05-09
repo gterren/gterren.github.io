@@ -6,4 +6,4 @@ related_posts: false
 ---
 
 
-We will be presenting at the <a href="https://www.esig.energy/event/2025-forecasting-markets-workshop/">2025 Forecasting & Markets Workshopt</a> organized by ESIG in Nashville, TN. Find us in <strong>Session 4A Advancements in Forecasting: From DERs and Data Centers to New Methods for Wind and Solar Forecasting</strong> on Jan 26
+We will be presenting at the <a href="https://www.esig.energy/event/2025-forecasting-markets-workshop/">2025 Forecasting & Markets Workshop</a> organized by ESIG in Nashville, TN. Find us in <strong>Session 4A Advancements in Forecasting: From DERs and Data Centers to New Methods for Wind and Solar Forecasting</strong> on the Jan 26 sessions.

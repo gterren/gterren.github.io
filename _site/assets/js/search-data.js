@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
         },{id: "nav-projects",
           title: "projects",
           description: "Some of my ongoing work.",
@@ -52,8 +59,11 @@ ninja.data = [{
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
-      },{id: "news-we-will-be-presenting-at-the-2025-forecasting-amp-amp-markets-workshopt-organized-by-esig-in-nashville-tn-find-us-in-session-4a-advancements-in-forecasting-from-ders-and-data-centers-to-new-methods-for-wind-and-solar-forecasting-on-jan-26",
-          title: 'We will be presenting at the 2025 Forecasting &amp;amp;amp; Markets Workshopt organized by...',
+      },{id: "news-we-will-be-presenting-at-the-2025-forecasting-amp-amp-markets-workshop-organized-by-esig-in-nashville-tn-find-us-in-session-4a-advancements-in-forecasting-from-ders-and-data-centers-to-new-methods-for-wind-and-solar-forecasting-on-the-jan-26-sessions",
+          title: 'We will be presenting at the 2025 Forecasting &amp;amp;amp; Markets Workshop organized by...',
+          description: "",
+          section: "News",},{id: "news-our-new-manuscript-is-available-online-you-can-read-extreme-day-ahead-renewables-scenario-selection-in-power-grid-operations-in-applied-energy",
+          title: 'Our new manuscript is available online! You can read Extreme day-ahead renewables scenario...',
           description: "",
           section: "News",},{id: "projects-al-based-energy-forecast",
           title: 'Al-based Energy Forecast',
