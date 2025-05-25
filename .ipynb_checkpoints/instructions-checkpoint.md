@@ -7,4 +7,4 @@
 `bundle exec jekyll serve'
 
 # Deply page in github
-`bin/deply --user'
+`bin/deploy --user'

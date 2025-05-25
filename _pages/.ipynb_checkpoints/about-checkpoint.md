@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Environmental Studies, <a href='https://www.ucsb.edu/'>University of California Santa Barbara</a>. 
+subtitle: Postdoctoral Research Fellow, <a href='https://www.ucsb.edu/'>University of California Santa Barbara</a>. 
 
 profile:
   align: right

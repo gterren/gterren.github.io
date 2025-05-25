@@ -30,7 +30,7 @@ orcid_id: 0000-0002-8688-2299 # your ORCID ID
 # quora_username: # your Quora username
 # research_gate_profile: # your profile on ResearchGate
 # rss_icon: false # set to true to show the RSS icon
-# scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+scholar_userid: LSVOuPQAAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
@@ -45,6 +45,10 @@ orcid_id: 0000-0002-8688-2299 # your ORCID ID
 # x_username: # your X handle
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
+custom_social: # can be any name here other than the ones already defined above
+  logo: https://avatars.githubusercontent.com/u/48566538?s=200&v=4
+  title: ES
+  url: https://es.ucsb.edu/people/guillermo-terren-serrano
 custom_social: # can be any name here other than the ones already defined above
   logo: https://avatars.githubusercontent.com/u/48566538?s=200&v=4
   title: emLab
