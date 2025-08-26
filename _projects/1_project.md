@@ -1,21 +1,17 @@
 ---
 layout: page
-title: Al-based Energy Forecast
-description: Day-ahead probabilistic forecast of wind and solar electricity generation and demand
-img: images/1_cover.png
-importance: 1
+title: Girasol Machine
+description: Multi-spectra sky imager for solar nowcasting
+img: images/3_cover.png
+importance: 4
 category: work
+related_publications: true
 ---
 
-We developed a fully probabilistic day-ahead joint forecast of wind and solar electricity generation and demand. The manuscript is currently under review, but we shared a <a href='https://www.researchsquare.com/article/rs-5891000/v1'>preprint</a> online.
+https://orfeus.princeton.edu/
 
-We've shared the codes necessary for the <a href='https://github.com/gterren/caiso_power'>experiments</a>, and the <a href='https://github.com/gterren/caiso_power_viz'>visualization</a> on public GitHub repositories.
+I constructed a sky imager (`Girasol Machine`) with far-infrared and multi-exposure fisheye visible light capabilities, mounted on a solar tracker, so that the Sun remains at the center of the sky images throughout the day. We developed a noise reduction software and an image fusion algorithm to merge fisheye sky images with different exposures, thereby obtaining a low signal-to-noise ratio sky image with a high dynamic range {% cite TERRENSERRANO2021106914 %}. 
 
-We travelled to the ESIG 2025 Forecasting & Markets Workshop in Nashville to present our final results with other researchers and industry experts in the field.
+The <a href='https://doi.org/10.5061/dryad.zcrjdfn9m'>Girasol dataset</a> is publicly accessible in a Dryad repository. The <a href='https://doi.org/10.5061/dryad.zcrjdfn9m'>Girasol dataset</a> is composed of 300 sample days of multi-exposure fisheye visible light and far-infrared sky images and irradiance measurements collected every 15-second resolution in Albuquerque, NM, USA.
 
-As part of this project, we also attended the 2025 IEEE PES Grid Edge Technologies Conference & Exposition in San Diego to present our <a href='https://ieeexplore.ieee.org/abstract/document/10887459'>project</a> and share it with the power and energy community.
-
-{% include figure.liquid loading="eager" path="images/flyer.png" title="Day-ahead demand forecast" class="img-fluid rounded z-depth-1" %}
-
-We first went to the 2024 Macro-Energy Systems Workshop at Princeton University to share our project in a poster with other academics and scholars.
 

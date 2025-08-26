@@ -68,21 +68,26 @@ ninja.data = [{
           section: "News",},{id: "news-we-have-a-new-preprint-you-can-read-joint-probabilistic-day-ahead-energy-forecast-for-power-system-operations-online",
           title: 'We have a new preprint. You can read Joint Probabilistic Day-Ahead Energy Forecast...',
           description: "",
-          section: "News",},{id: "projects-al-based-energy-forecast",
-          title: 'Al-based Energy Forecast',
-          description: "Day-ahead probabilistic forecast of wind and solar electricity generation and demand",
+          section: "News",},{id: "projects-girasol-machine",
+          title: 'Girasol Machine',
+          description: "Multi-spectra sky imager for solar nowcasting",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-al-based-day-ahead-energy-forecast",
+          title: 'Al-Based Day-Ahead Energy Forecast',
+          description: "Day-ahead probabilistic forecast of wind and solar electricity generation and demand",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
             },},{id: "projects-india-energy-transition",
           title: 'India Energy Transition',
           description: "India&#39;s electricity system transition towards low-carbon emission",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-girasol-machine",
-          title: 'Girasol Machine',
-          description: "Multi-spectra sky imager for solar nowcasting",
-          section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-orfeus",
+          title: 'ORFEUS',
+          description: "Operational Risk Financialization of Electricity Under Stochasticity",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
             },},{
         id: 'social-email',
         title: 'email',
