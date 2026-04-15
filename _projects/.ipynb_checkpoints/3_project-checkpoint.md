@@ -1,13 +1,13 @@
 ---
 layout: page
 title: AI-Based Day-Ahead Energy Forecast
-description: Day-ahead probabilistic forecast of wind and solar electricity generation and demand
+description: Joint day-ahead probabilistic forecast of wind and solar electricity generation and demand 
 img: images/1_cover.png
 importance: 2
 category: work
 ---
 
-We developed a fully probabilistic day-ahead joint forecast of wind and solar electricity generation and demand. The <a href='https://www.researchsquare.com/article/rs-5891000/v1'>preprint</a> is available online. The <a href='https://github.com/gterren/caiso_power'>software</a>, and <a href='https://github.com/gterren/caiso_power_viz'>visualization tools</a> are on public GitHub repositories.
+We developed a fully probabilistic day-ahead joint forecast of wind and solar electricity generation and demand. The <a href='https://www.nature.com/articles/s41467-026-69015-w'>article</a> is available online. The <a href='https://github.com/gterren/caiso_power'>software</a>, and <a href='https://github.com/gterren/caiso_power_viz'>visualization tools</a> are also public on GitHub repositories.
 
 We presented our project at the ESIG 2025 Forecasting & Markets Workshop in Nashville.
 
@@ -24,3 +24,5 @@ We went to the 2024 Macro-Energy Systems Workshop at Princeton University to pre
 <iframe src="/assets/pdf/MES2024_poster.pdf" width="100%" height="600px">
     This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/MES2024_poster.pdf">Download PDF</a>
 </iframe>
+
+This work is part of my 2023 CNSI Climate Innovation Fellowship at the University of California.

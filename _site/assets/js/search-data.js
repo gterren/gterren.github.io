@@ -79,22 +79,22 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-girasol-machine-and-dataset",
           title: 'Girasol Machine and Dataset',
-          description: "Multi-spectra sky imager on a solar tracker for microgrids with hybrid generation resources",
+          description: "Multi-spectral sky imager mounted on a solar tracker, designed for real-time solar nowcasting and to support optimal economic dispatch of hybrid generation resources in microgrids",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-ml-ai-solar-nowcasting-based-on-computer-vision",
-          title: 'ML/AI Solar nowcasting based on computer vision',
-          description: "End-to-end solar forecasting embedded on the Girasol Machine",
+            },},{id: "projects-ai-ml-solar-nowcasting-based-on-computer-vision",
+          title: 'AI/ML Solar Nowcasting Based on Computer Vision',
+          description: "End-to-end solar nowcasting embedded pipeline within the Girasol Machine, based on computer vision to fuse multi-sensor data for very short-term solar radiation forecasting",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-ai-based-day-ahead-energy-forecast",
           title: 'AI-Based Day-Ahead Energy Forecast',
-          description: "Day-ahead probabilistic forecast of wind and solar electricity generation and demand",
+          description: "Joint day-ahead probabilistic forecast of wind and solar electricity generation and demand",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-day-ahead-stochastic-power-grid-planning",
           title: 'Day-Ahead Stochastic Power Grid Planning',
-          description: "Operational Risk Financialization of Electricity Under Stochasticity (ORFEUS)",
+          description: "Asset-level demand, solar and wind extreme scenario selection as part of the Operational Risk Financialization of Electricity Under Stochasticity (ORFEUS) team",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-india-energy-transition",

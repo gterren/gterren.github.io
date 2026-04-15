@@ -1,13 +1,13 @@
 ---
 layout: page
-title: ML/AI Solar nowcasting based on computer vision
-description: End-to-end solar forecasting embedded on the Girasol Machine
+title: AI/ML Solar Nowcasting Based on Computer Vision
+description: End-to-end solar nowcasting embedded pipeline within the Girasol Machine, based on computer vision to fuse multi-sensor data for very short-term solar radiation forecasting
 img: images/2_cover.png
 importance: 4
 category: work
 ---
 
-This project develops an end-to-end ML/AI framework for solar nowcasting (very short-term forecasting) using a real-time stream of infrared sky images from the Girasol system, enabling continuous extraction of cloud features and dynamic updating of intra-hour forecasts.
+This project develops an end-to-end AI/ML framework for solar nowcasting (very short-term forecasting) using a real-time stream of infrared sky images from the Girasol system, enabling continuous extraction of cloud features and dynamic updating of intra-hour forecasts.
 
 <div style="text-align:center;">
   <img src="/assets/img/workflow_solar_forecasting.jpg" width="90%">
@@ -18,17 +18,19 @@ This project develops an end-to-end ML/AI framework for solar nowcasting (very s
 
 The embedded architecture comprises three learning modules.
 
-The first module uses physics-informed ML/AI to estimate and visualize wind velocity fields from image streams, enabling the prediction of cloud motion and Sun-occlusion events {% cite TERRENSERRANO2021116656 %}.
+* `Module 1 (Physics-informed learning):` Estimates and visualizes wind velocity fields from image streams, enabling prediction of cloud motion and Sun-occlusion events {% cite TERRENSERRANO2021116656 %}.
+
+* `Module 2 (Bayesian learning):` Detects clouds and associates each cloud to an estimated wind flow using mixture models in a Hidden Markov Chain {% cite TERRENSERRANO2023110628 %}.
+
+* `Module 3 (Probabilistic deep learning):` Fuses multi-sensor data—including sky images, weather station measurements, and pyranometer data to generate probabilistic forecasts of solar irradiance over 1–15 minute horizons {% cite TERRENSERRANO202342 %}.
 
 <div style="text-align:center;">
-  <img src="/assets/img/wind_flow.pn" width="90%">
+  <img src="/assets/img/forecast.png" width="45%">
   <p style="font-size:14px; color:#555;">
-    End-to-end ML/AI pipeline for solar nowcasting using real-time infrared sky imaging and multi-sensor data fusion.
+    Forecasting event (bright green), very short-term probabilistic functional forecast (green), partially observed solar radiation (black), ground-truth unobserved radiation (red), persistence forecast (gray), and deterministic functional forecast orange.
   </p>
 </div>
 
-The second module employs Bayesian learning with Markov models to detect clouds and associate each wind flow with a cloud layer {% cite TERRENSERRANO2023110628 %}.
-
-The third module applies probabilistic deep learning to fuse multi-sensor data—including sky images, weather station measurements, and pyranometer data—to generate probabilistic forecasts of solar irradiance over horizons of 1 to 15 minutes {% cite TERRENSERRANO202342 %}.
-
 Together, these modules form a unified computational framework for accurate, real-time solar forecasting to support reliable power system operations under uncertainty.
+
+This work is part of my Ph.D. dissertation at the University of New Mexico.
