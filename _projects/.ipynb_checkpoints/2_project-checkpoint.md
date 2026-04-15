@@ -1,26 +1,34 @@
 ---
 layout: page
-title: Al-Based Day-Ahead Energy Forecast
-description: Day-ahead probabilistic forecast of wind and solar electricity generation and demand
-img: images/1_cover.png
-importance: 2
+title: ML/AI Solar nowcasting based on computer vision
+description: End-to-end solar forecasting embedded on the Girasol Machine
+img: images/2_cover.png
+importance: 4
 category: work
 ---
 
-We developed a fully probabilistic day-ahead joint forecast of wind and solar electricity generation and demand. The <a href='https://www.researchsquare.com/article/rs-5891000/v1'>preprint</a> is available online. The <a href='https://github.com/gterren/caiso_power'>software</a>, and <a href='https://github.com/gterren/caiso_power_viz'>visualization tools</a> are on public GitHub repositories.
+This project develops an end-to-end ML/AI framework for solar nowcasting (very short-term forecasting) using a real-time stream of infrared sky images from the Girasol system, enabling continuous extraction of cloud features and dynamic updating of intra-hour forecasts.
 
-We presented our project at the ESIG 2025 Forecasting & Markets Workshop in Nashville.
+<div style="text-align:center;">
+  <img src="/assets/img/workflow_solar_forecasting.jpg" width="90%">
+  <p style="font-size:14px; color:#555;">
+    End-to-end ML/AI pipeline for solar nowcasting using real-time infrared sky imaging and multi-sensor data fusion.
+  </p>
+</div>
 
-<iframe src="/assets/pdf/ESIG2025_presentation.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/ESIG2025_presentation.pdf">Download PDF</a>
-</iframe>
+The embedded architecture comprises three learning modules.
 
-We also attended the 2025 IEEE PES Grid Edge Technologies Conference & Exposition in San Diego to present the <a href='https://ieeexplore.ieee.org/abstract/document/10887459'>project</a>.
+The first module uses physics-informed ML/AI to estimate and visualize wind velocity fields from image streams, enabling the prediction of cloud motion and Sun-occlusion events {% cite TERRENSERRANO2021116656 %}.
 
-{% include figure.liquid loading="eager" path="images/flyer.png" title="Day-ahead demand forecast" class="img-fluid rounded z-depth-1" %}
+<div style="text-align:center;">
+  <img src="/assets/img/wind_flow.pn" width="90%">
+  <p style="font-size:14px; color:#555;">
+    End-to-end ML/AI pipeline for solar nowcasting using real-time infrared sky imaging and multi-sensor data fusion.
+  </p>
+</div>
 
-We went to the 2024 Macro-Energy Systems Workshop at Princeton University to present a poster.
+The second module employs Bayesian learning with Markov models to detect clouds and associate each wind flow with a cloud layer {% cite TERRENSERRANO2023110628 %}.
 
-<iframe src="/assets/pdf/MES2024_poster.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/MES2024_poster.pdf">Download PDF</a>
-</iframe>
+The third module applies probabilistic deep learning to fuse multi-sensor data—including sky images, weather station measurements, and pyranometer data—to generate probabilistic forecasts of solar irradiance over horizons of 1 to 15 minutes {% cite TERRENSERRANO202342 %}.
+
+Together, these modules form a unified computational framework for accurate, real-time solar forecasting to support reliable power system operations under uncertainty.

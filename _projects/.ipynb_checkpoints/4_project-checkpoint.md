@@ -1,9 +1,9 @@
 ---
 layout: page
-title: ORFEUS
-description: Operational Risk Financialization of Electricity Under Stochasticity
+title: Day-Ahead Stochastic Power Grid Planning
+description: Operational Risk Financialization of Electricity Under Stochasticity (ORFEUS)
 img: images/4_cover.png
-importance: 3
+importance: 2
 category: work
 related_publications: true
 ---

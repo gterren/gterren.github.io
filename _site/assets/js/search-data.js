@@ -68,26 +68,40 @@ ninja.data = [{
           section: "News",},{id: "news-we-have-a-new-preprint-you-can-read-joint-probabilistic-day-ahead-energy-forecast-for-power-system-operations-online",
           title: 'We have a new preprint. You can read Joint Probabilistic Day-Ahead Energy Forecast...',
           description: "",
-          section: "News",},{id: "projects-girasol-machine",
-          title: 'Girasol Machine',
-          description: "Multi-spectra sky imager for solar nowcasting",
+          section: "News",},{id: "news-we-released-gridpath-india-a-capacity-expansion-and-production-cost-model-of-the-indian-electricity-system-it-is-based-on-gridpath-an-open-source-power-flow-modeling-platform-for-python-you-can-now-download-it-from-our-dryad-repository-gridpath-india-long-term-2020-2050-power-system-planning-model-data",
+          title: 'We released GridPath-India! A capacity expansion and production cost model of the Indian...',
+          description: "",
+          section: "News",},{id: "news-our-new-manuscript-probabilistic-day-ahead-forecasting-of-system-level-renewable-energy-and-electricity-demand-is-now-online-you-can-read-it-in-nature-communications",
+          title: 'Our new manuscript Probabilistic day-ahead forecasting of system-level renewable energy and electricity demand...',
+          description: "",
+          section: "News",},{id: "news-we-will-be-presenting-a-poster-in-the-next-2026-mes-workshop-at-the-georgia-institute-of-technology-in-atlanta-august-13-14",
+          title: 'We will be presenting a poster in the next 2026 MES Workshop at...',
+          description: "",
+          section: "News",},{id: "projects-girasol-machine-and-dataset",
+          title: 'Girasol Machine and Dataset',
+          description: "Multi-spectra sky imager on a solar tracker for microgrids with hybrid generation resources",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-al-based-day-ahead-energy-forecast",
-          title: 'Al-Based Day-Ahead Energy Forecast',
-          description: "Day-ahead probabilistic forecast of wind and solar electricity generation and demand",
+            },},{id: "projects-ml-ai-solar-nowcasting-based-on-computer-vision",
+          title: 'ML/AI Solar nowcasting based on computer vision',
+          description: "End-to-end solar forecasting embedded on the Girasol Machine",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-ai-based-day-ahead-energy-forecast",
+          title: 'AI-Based Day-Ahead Energy Forecast',
+          description: "Day-ahead probabilistic forecast of wind and solar electricity generation and demand",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
+            },},{id: "projects-day-ahead-stochastic-power-grid-planning",
+          title: 'Day-Ahead Stochastic Power Grid Planning',
+          description: "Operational Risk Financialization of Electricity Under Stochasticity (ORFEUS)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
             },},{id: "projects-india-energy-transition",
           title: 'India Energy Transition',
           description: "India&#39;s electricity system transition towards low-carbon emission",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-orfeus",
-          title: 'ORFEUS',
-          description: "Operational Risk Financialization of Electricity Under Stochasticity",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
+              window.location.href = "/projects/5_project/";
             },},{
         id: 'social-email',
         title: 'email',

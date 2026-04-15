@@ -2,16 +2,18 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Research Fellow, <a href='https://www.ucsb.edu/'>University of California Santa Barbara</a>. 
+subtitle: Postdoctoral Researcher, <a href='https://www.ucsb.edu/'>University of California Santa Barbara</a>. 
 
 profile:
   align: right
   image: guille_headshot.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>B4344 floor 4L</p>
-    <p>4312 Bren Hall, UC Santa Barbara</p>
-    <p>Santa Barbara, CA93106</p>
+    <div style="font-family: 'Source Sans Pro', sans-serif; font-size: 15px;">
+        <p>B4344 floor 4L</p>
+        <p>4312 Bren Hall, UC Santa Barbara</p>
+        <p>Santa Barbara, CA 93106</p>
+     </div>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -23,11 +25,20 @@ announcements:
 
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new post items
   limit: 3 # leave blank to include all the blog posts
 ---
 
+Modern power systems are increasingly shaped by uncertainty arising from weather-dependent resources, evolving demand patterns, and growing extreme events. In my research, I develop computational and modeling frameworks to understand how these uncertainties propagate from planning to operations and into electricity markets.
 
-I am a <a href='https://www.cnsi.ucsb.edu/programs/climate-innovation-fellows'>Climate Innovation Postdoctoral Fellow</a> affiliated with the <a href='https://es.ucsb.edu/'>Environmental Studies Program</a> and the <a href='https://emlab.ucsb.edu/'>Environmental Markets Lab (emLab)</a> at the <a href='https://www.ucsb.edu/'>University of California Santa Barbara</a> in the United States. I received a Bachelor's degree in Technical Industrial Engineering from the <a href='https://www.unizar.es/'>Escuela de Ingeniería y Arquitecture</a> at the <a href='https://www.unizar.es/'>Universidad de Zaragoza</a> in Spain, and a Ph.D. in Electrical Engineering from the <a href='http://www.ece.unm.edu/'>Electrical and Computer Engineering Department</a> at the <a href='https://www.unm.edu/'>University of New Mexico</a> in the United States. 
+As an electrical engineer with formal training in power systems and artificial intelligence/machine learning (AI/ML), I study how forecasting and operational reserves shape the effectiveness and resilience of system planning and operations. I have proposed novel remote sensing hardware and AI/ML approaches in energy meteorology; explored long-term capacity expansion pathways for low-carbon energy transitions; analyzed resource adequacy to identify drivers of unserved energy; and examined stochastic unit commitment to understand how forecasting errors affect operations and electricity market outcomes.
 
-My research interests include electricity markets, power grids, macro-energy systems, and energy forecasts. In particular, I focus on the estimation of short-term operating reserves and the long-term planning reserve margin, combining probabilistic machine learning, optimization, and remote sensing.
+I am a Postdoctoral Scholar in the <a href='https://es.ucsb.edu/'>Environmental Studies Program</a>. I collaborate in research projects with the Energy Program at the <a href='https://emlab.ucsb.edu/'>Environmental Markets Lab (emLab)</a>, the <a href='https://www.2035initiative.com/'>2035 Initiative</a> at the <a href='https://iee.ucsb.edu/'>Institute for Energy Efficiency</a>, and the SCiFI team at the <a href='https://www.pstat.ucsb.edu/'>Department of Statistics and Applied Probability</a>. My work has been published in leading science and engineering journals, including *Nature Communications*, *Renewable & Sustainable Energy Reviews*, *Information Fusion*, and *IEEE Transactions*. I obtained my PhD from the <a href='http://www.ece.unm.edu/'>Electrical and Computer Engineering Department</a> in the <a href='https://www.unm.edu/'>University of New Mexico</a> and my undergraduate degree from the <a href='https://www.unizar.es/'>Universidad de Zaragoza</a>. I was a recipient of the Avangrid (Iberdrola) Foundation and King Felipe VI of Spain doctoral scholarship, and the <a href='https://www.cnsi.ucsb.edu/'>California Nano-Systems Institute</a> <a href='https://www.cnsi.ucsb.edu/programs/climate-innovation-fellows'>2023 Climate Innovation Postdoctoral Fellowship</a>. I regularly serve as a research mentor for undergraduate students at UCSB.
+
+<!-- 
+<div style="text-align:center;">
+  <img src="/assets/img/research_theme.png" width="90%">
+  <p style="font-size:14px; color:#555;">
+    End-to-end ML/AI pipeline for solar nowcasting using real-time infrared sky imaging and multi-sensor data fusion.
+  </p>
+</div> -->

@@ -1,10 +1,10 @@
-# Instructions to run jekyll and how to update the github page repo
+# Instructions to run Jekyll and how to update the GitHub page repo
 
-# Install all the gem requierments
+# Install all the gem requirements
 `bundle install'
 
 # Local website version
 `bundle exec jekyll serve'
 
-# Deply page in github
+# Deploy page in GitHub
 `bin/deploy --user'
