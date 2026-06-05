@@ -1,36 +1,19 @@
 ---
 layout: page
-title: AI/ML Solar Nowcasting Based on Computer Vision
-description: End-to-end solar nowcasting embedded pipeline within the Girasol Machine, based on computer vision to fuse multi-sensor data for very short-term solar radiation forecasting
+title: Day-ahead scheduling and operating reserves
+description: Improving probabilistic day-ahead energy forecasts by combining numerical weather forecasts with AI/ML models, and reducing the complexity of stochastic unit commitment and economic dispatch models through scenario selection, to mitigate risks of renewable energy curtailment, load shedding, and electricity price volatility.
 img: images/2_cover.png
-importance: 4
+importance: 2
 category: work
+giscus_comments: false
+display_categories: false
 ---
 
-This project develops an end-to-end AI/ML framework for solar nowcasting (very short-term forecasting) using a real-time stream of infrared sky images from the Girasol system, enabling continuous extraction of cloud features and dynamic updating of intra-hour forecasts.
+We introduced a methodology that leverages statistical functional depth metrics to identify the most operationally risky scenarios-those likely to result in high generation costs, reserve shortfalls, load shedding, or renewable curtailment. You can find more information in our publication {% cite TERRENSERRANO2025125747 %}. 
 
-<div style="text-align:center;">
-  <img src="/assets/img/workflow_solar_forecasting.jpg" width="90%">
-  <p style="font-size:14px; color:#555;">
-    End-to-end ML/AI pipeline for solar nowcasting using real-time infrared sky imaging and multi-sensor data fusion.
-  </p>
-</div>
+We presented our project at the <a href='https://www.arpae-summit.com'>2024 ARPA-E Energy Innovation Summit</a> as part of Princeton University <a href='https://orfeus.princeton.edu'>PERFORM team</a>.
+<iframe src="/assets/pdf/TL_poster_arpa-e.pdf" width="100%" height="600px">
+    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/TL_poster_arpa-e.pdf">Download PDF</a>
+</iframe>
 
-The embedded architecture comprises three learning modules.
-
-* `Module 1 (Physics-informed learning):` Estimates and visualizes wind velocity fields from image streams, enabling prediction of cloud motion and Sun-occlusion events {% cite TERRENSERRANO2021116656 %}.
-
-* `Module 2 (Bayesian learning):` Detects clouds and associates each cloud to an estimated wind flow using mixture models in a Hidden Markov Chain {% cite TERRENSERRANO2023110628 %}.
-
-* `Module 3 (Probabilistic deep learning):` Fuses multi-sensor data—including sky images, weather station measurements, and pyranometer data to generate probabilistic forecasts of solar irradiance over 1–15 minute horizons {% cite TERRENSERRANO202342 %}.
-
-<div style="text-align:center;">
-  <img src="/assets/img/forecast.png" width="45%">
-  <p style="font-size:14px; color:#555;">
-    Forecasting event (bright green), very short-term probabilistic functional forecast (green), partially observed solar radiation (black), ground-truth unobserved radiation (red), persistence forecast (gray), and deterministic functional forecast orange.
-  </p>
-</div>
-
-Together, these modules form a unified computational framework for accurate, real-time solar forecasting to support reliable power system operations under uncertainty.
-
-This work is part of my Ph.D. dissertation at the University of New Mexico.
+This work is part of the ORFEUS team at Princeton University.

@@ -17,12 +17,12 @@
   
   
     
-      AI-Based Day-Ahead Energy Forecast | Guillermo Terrén-Serrano, Ph.D.
+      Energy Meteorology | Guillermo Terrén-Serrano
     
   
 </title>
-<meta name="author" content="Guillermo Terrén-Serrano, Ph.D.">
-<meta name="description" content="Joint day-ahead probabilistic forecast of wind and solar electricity generation and demand">
+<meta name="author" content="Guillermo Terrén-Serrano">
+<meta name="description" content="Information fusion from multi-spectral sky imagers and weather sensors, using computer vision and deep learning, to improve solar generation nowcasting and coordinate real-time frequency response during cloud-driven variability in the generation.">
 
   <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
@@ -103,7 +103,7 @@
               <span class="font-weight-bold">Guillermo</span>
             
             
-            Terrén-Serrano, Ph.D.
+            Terrén-Serrano
           
         </a>
       
@@ -121,7 +121,7 @@
 
           <!-- About -->
           <li class="nav-item ">
-            <a class="nav-link" href="/">about
+            <a class="nav-link" href="/">About
               
             </a>
           </li>
@@ -160,10 +160,20 @@
             
           
             
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
               
                 
                 <li class="nav-item ">
-                  <a class="nav-link" href="/publications/">publications
+                  <a class="nav-link" href="/cv/">CV
                     
                   </a>
                 </li>
@@ -174,7 +184,7 @@
               
                 
                 <li class="nav-item active">
-                  <a class="nav-link" href="/projects/">projects
+                  <a class="nav-link" href="/projects/">Research
                     
                       <span class="sr-only">(current)</span>
                     
@@ -187,7 +197,7 @@
               
                 
                 <li class="nav-item ">
-                  <a class="nav-link" href="/cv/">resume
+                  <a class="nav-link" href="/publications/">Publications
                     
                   </a>
                 </li>
@@ -198,7 +208,18 @@
               
                 
                 <li class="nav-item ">
-                  <a class="nav-link" href="/repositories/">repositories
+                  <a class="nav-link" href="/repositories/">Repositories
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/contact/">Contact
                     
                   </a>
                 </li>
@@ -245,45 +266,454 @@
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">AI-Based Day-Ahead Energy Forecast</h1>
-    <p class="post-description">Joint day-ahead probabilistic forecast of wind and solar electricity generation and demand</p>
+    <h1 class="post-title">Energy Meteorology</h1>
+    <p class="post-description">Information fusion from multi-spectral sky imagers and weather sensors, using computer vision and deep learning, to improve solar generation nowcasting and coordinate real-time frequency response during cloud-driven variability in the generation.</p>
   </header>
 
   <article>
-    <p>We developed a fully probabilistic day-ahead joint forecast of wind and solar electricity generation and demand. The <a href="https://www.nature.com/articles/s41467-026-69015-w" rel="external nofollow noopener" target="_blank">article</a> is available online. The <a href="https://github.com/gterren/caiso_power" rel="external nofollow noopener" target="_blank">software</a>, and <a href="https://github.com/gterren/caiso_power_viz" rel="external nofollow noopener" target="_blank">visualization tools</a> are also public on GitHub repositories.</p>
+    <p><code class="language-plaintext highlighter-rouge">Girasol Machine</code> is a sky imager with far-infrared and multi-exposure capabilities in visible light (fisheye), mounted on a solar tracker so that the Sun remains centered in the sky images throughout the day. The sky imager has a noise-reduction software for the infrared images and an image fusion algorithm to merge fisheye sky images with different exposures. It produces low-noise infrared circumsolar images and high-dynamic-range all-sky images every 15 seconds <a class="citation" href="#TERRENSERRANO2021106914">(Terrén-Serrano et al., 2021)</a>. The <code class="language-plaintext highlighter-rouge">Girasol Machine</code> is equipped with a pyranometer.</p>
 
-<p>We presented our project at the ESIG 2025 Forecasting &amp; Markets Workshop in Nashville.</p>
+<p>The <a href="https://doi.org/10.5061/dryad.zcrjdfn9m" rel="external nofollow noopener" target="_blank">Girasol dataset</a> is publicly accessible in a Dryad repository. The dataset comprises 300 sample days of multi-exposure fisheye visible-light and far-infrared sky images and irradiance measurements from the <code class="language-plaintext highlighter-rouge">Girasol Machine</code>, collected in Albuquerque, NM, USA.</p>
 
-<iframe src="/assets/pdf/ESIG2025_presentation.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/ESIG2025_presentation.pdf">Download PDF</a>
-</iframe>
+<div style="text-align:center;">
+  <img src="/assets/img/image_processing.jpg" width="80%">
+  <p style="font-size:14px; color:#555;">
+    Image processing embedded `Girasol Machine`: raw infrared image (left), atmospheric scatter radiation (middle), processed image (right).
+  </p>
+</div>
 
-<p>We also attended the 2025 IEEE PES Grid Edge Technologies Conference &amp; Exposition in San Diego to present the <a href="https://ieeexplore.ieee.org/abstract/document/10887459" rel="external nofollow noopener" target="_blank">project</a>.</p>
+<p>Building on this hardware, we developed advanced signal and image processing methods to extract cloud dynamic features from synchronized sky images and irradiance measurements, enabling their integration into solar nowcasting and intra-hour forecasting frameworks <a class="citation" href="#TERRENSERRANO2023111968">(Terrén-Serrano &amp; Martínez-Ramón, 2023)</a>. These methods include removing cyclostationary biases in irradiance signals, stabilizing infrared radiometric measurements, and using physics-informed machine-learning models to isolate atmospheric radiation and enhance cloud feature detection, ultimately improving forecast robustness and reducing operational costs.</p>
 
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-    <img src="/images/flyer.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Day-ahead demand forecast" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-  </picture>
+<div style="text-align:center;">
+  <img src="/assets/img/crosssection_plane.png" width="50%">
+  <p style="font-size:14px; color:#555;">
+    Geospatial reprojections to account for the curvature of the Earth from the image's perspective from the viewpoint. 
+  </p>
+</div>
 
-  
-</figure>
+<p>We also addressed the geometric distortions inherent to ground-based sky imaging systems by developing geospatial reprojection methods that transform image-plane coordinates into atmospheric cross-sections. These reprojections to account for the Earth’s curvature enable more accurate estimation of cloud position, motion, and spatial extent, particularly for systems mounted on solar trackers where perspective evolves dynamically over time <a class="citation" href="#TERRENSERRANO2022">(Terrén-Serrano &amp; Martínez-Ramón, 2022)</a></p>
 
-<p>We went to the 2024 Macro-Energy Systems Workshop at Princeton University to present a poster.</p>
+<p>This work is part of my Ph.D. dissertation at the University of New Mexico.</p>
 
-<iframe src="/assets/pdf/MES2024_poster.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/MES2024_poster.pdf">Download PDF</a>
-</iframe>
-
-<p>This work is part of my 2023 CNSI Climate Innovation Fellowship at the University of California.</p>
 
   </article>
 
+  
+    <h2>References</h2>
+    <div class="publications">
+      <h2 class="bibliography">2023</h2>
+<ol class="bibliography"><li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100" style="background-color:#9FE2BF">
+            
+              <div>JOURNAL</div>
+            
+          </abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="TERRENSERRANO2023111968" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Processing of global solar irradiance and ground-based infrared sky images for solar nowcasting and intra-hour forecasting applications</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Guillermo
+            Terrén-Serrano</em>  and <a href="https://ece.unm.edu/faculty-staff/electrical-and-computer/manel-martinez-ramon.html" rel="external nofollow noopener" target="_blank">Manel
+              Martínez-Ramón</a>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Solar Energy</em>,  2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="https://doi.org/https://doi.org/10.1016/j.solener.2023.111968" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+        
+          <a href="https://www.sciencedirect.com/science/article/pii/S0038092X23006023" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+        <div class="badges">
+          
+          
+          
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=LSVOuPQAAAAJ&amp;citation_for_view=LSVOuPQAAAAJ:kNdYIx-mwKoC" aria-label="Google Scholar link" role="button" rel="external nofollow noopener" target="_blank">
+              <img src="https://img.shields.io/badge/scholar-N/A-4285F4?logo=googlescholar&amp;labelColor=beige" alt="N/A Google Scholar citations">
+            </a>
+          
+          
+        </div>
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Shadows from moving clouds in the troposphere impact the energy generated by photovoltaic systems. intra-hour solar forecast can be used to regulate solar energy dispatch. This investigation develops a data processing method for cloud dynamic feature extraction from raw sky images and Global Solar Irradiance (GSI) measurements that can be integrated into solar forecasting algorithms to reduce the operational supervision of hardware. Sky images and GSI measurements are acquired from a low-cost long-wave infrared radiometric camera and a pyranometer. This sky imager is mounted on a solar tracker that maintains the Sun in the center of sky images throughout the day. Multiple processing methods are proposed here that take advantage of a hybrid approach to approximate the optimal parameters of physical models using computationally inexpensive machine learning models. A signal processing method removes cyclostationary biases in high-resolution clear sky index values found when detrending GSI measurements using the clear sky GSI. Image processing methods are then used to remove the effects of atmospheric radiation and the Sun’s direct radiation from infrared sky images, plus the radiation effect emitted by debris on the sky imager’s germanium outdoor lens. The result is an adaptive solar forecasting algorithm that can reduce the operational cost of power grids with the high participation of solar energy in the generation mix.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">TERRENSERRANO2023111968</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Processing of global solar irradiance and ground-based infrared sky images for solar nowcasting and intra-hour forecasting applications}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Solar Energy}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{264}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{111968}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">issn</span> <span class="p">=</span> <span class="s">{0038-092X}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1016/j.solener.2023.111968}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Terrén-Serrano, Guillermo and Martínez-Ramón, Manel}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{Image processing, Long-wave infrared, Machine learning, Sky imaging, Sun tracking}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+<h2 class="bibliography">2022</h2>
+<ol class="bibliography"><li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100" style="background-color:#9FE2BF">
+            
+              <div>JOURNAL</div>
+            
+          </abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="TERRENSERRANO2022" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Geospatial Perspective Reprojections for Ground-Based Sky Imaging Systems</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Guillermo
+            Terrén-Serrano</em>  and <a href="https://ece.unm.edu/faculty-staff/electrical-and-computer/manel-martinez-ramon.html" rel="external nofollow noopener" target="_blank">Manel
+              Martínez-Ramón</a>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>IEEE Transactions on Geoscience and Remote Sensing</em>,   2022
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="https://doi.org/10.1109/TGRS.2022.3154710" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+        
+          <a href="https://ieeexplore.ieee.org/document/9721281" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+        <div class="badges">
+          
+          
+          
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=LSVOuPQAAAAJ&amp;citation_for_view=LSVOuPQAAAAJ:Y0pCki6q_DkC" aria-label="Google Scholar link" role="button" rel="external nofollow noopener" target="_blank">
+              <img src="https://img.shields.io/badge/scholar-N/A-4285F4?logo=googlescholar&amp;labelColor=beige" alt="N/A Google Scholar citations">
+            </a>
+          
+          
+        </div>
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>The intermittency of solar energy produces instabilities in power grids. These instabilities are reduced with an intrahour solar forecast that uses ground-based sky imaging systems. Sky imaging systems use lenses to acquire images concentrating light beams in a sensor. The light beams received by the sky imager have an elevation angle with respect to the device’s normal. Thus, the pixels in the image contain information from different areas of the sky within the imaging system field of view (FOV). The area of the FOV contained in the pixels increases as the elevation angle of the incident light beams decreases. When the sky imager is mounted on a solar tracker, the light beam’s angle of incidence in a pixel varies over time. This investigation formulates and compares two geospatial reprojections that transform the original Euclidean frame of the imager’s plane to the geospatial atmosphere cross section where the sky imager’s FOV intersects the cloud layer. One assumes that an object (i.e., cloud) moving in the troposphere is sufficiently far so the Earth’s surface is approximated flat. The other transformation takes into account the curvature of the Earth in the portion of the atmosphere (i.e., voxel) that is recorded. The results show that the differences between the dimensions calculated by both geospatial transformations are in the order of magnitude of kilometers when the Sun’s elevation angle is below 30°.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">TERRENSERRANO2022</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Terrén-Serrano, Guillermo and Martínez-Ramón, Manel}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Transactions on Geoscience and Remote Sensing}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Geospatial Perspective Reprojections for Ground-Based Sky Imaging Systems}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{60}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1-7}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{Cloud computing;Lenses;Cameras;Geospatial analysis;Earth;Clouds;Sun;Perspective reprojection;sky imaging;solar forecasting;solar tracking}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1109/TGRS.2022.3154710}</span><span class="p">,</span>
+  <span class="na">issn</span> <span class="p">=</span> <span class="s">{1558-0644}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="s">{}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+<h2 class="bibliography">2021</h2>
+<ol class="bibliography"><li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100" style="background-color:#9FE2BF">
+            
+              <div>JOURNAL</div>
+            
+          </abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="TERRENSERRANO2021106914" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Girasol, a sky imaging and global solar irradiance dataset</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Guillermo
+            Terrén-Serrano</em>, Adnan
+            Bashir, Trilce
+            Estrada, and
+        <span class="more-authors" title="click to view 1 more author" onclick="
+              var element = $(this);
+              element.attr('title', '');
+              var more_authors_text = element.text() == '1 more author' ? 'Manel Martínez-Ramón' : '1 more author';
+              var cursorPosition = 0;
+              var textAdder = setInterval(function(){
+                element.html(more_authors_text.substring(0, cursorPosition + 1));
+                if (++cursorPosition == more_authors_text.length){
+                  clearInterval(textAdder);
+                }
+            }, '10');
+          ">1 more author</span>
+      
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Data in Brief</em>,   2021
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="https://doi.org/https://doi.org/10.1016/j.dib.2021.106914" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+        
+          <a href="https://www.sciencedirect.com/science/article/pii/S2352340921001980" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+        <div class="badges">
+          
+          
+          
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=LSVOuPQAAAAJ&amp;citation_for_view=LSVOuPQAAAAJ:Tyk-4Ss8FVUC" aria-label="Google Scholar link" role="button" rel="external nofollow noopener" target="_blank">
+              <img src="https://img.shields.io/badge/scholar-N/A-4285F4?logo=googlescholar&amp;labelColor=beige" alt="N/A Google Scholar citations">
+            </a>
+          
+          
+        </div>
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>The energy available in a microgrid that is powered by solar energy is tightly related to the weather conditions at the moment of generation. A very short-term forecast of solar irradiance provides the microgrid with the capability of automatically controlling the dispatch of energy. We propose a dataset to forecast Global Solar Irradiance (GSI) using a data acquisition system (DAQ) that simultaneously records sky imaging and GSI measurements, with the objective of extracting features from clouds and use them to forecast the power produced by a Photovoltaic (PV) system. The DAQ system is nicknamed the Girasol Machine (Girasol means Sunflower in Spanish). The sky imaging system consists of a longwave infrared (IR) camera and a visible (VI) light camera with a fisheye lens attached to it. The cameras are installed inside a weatherproof enclosure that it is mounted on a solar tracker. The tracker updates its pan and tilt every second using a solar position algorithm to maintain the Sun in the center of the IR and VI images. A pyranometer is situated on a horizontal mount next to the DAQ system to measure GSI. The dataset, composed of IR images, VI images, GSI measurements, and the Sun’s positions, has been tagged with timestamps.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">TERRENSERRANO2021106914</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Girasol, a sky imaging and global solar irradiance dataset}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Data in Brief}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{35}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{106914}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">issn</span> <span class="p">=</span> <span class="s">{2352-3409}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1016/j.dib.2021.106914}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Terrén-Serrano, Guillermo and Bashir, Adnan and Estrada, Trilce and Martínez-Ramón, Manel}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{Sky Imaging, Global Solar Irradiance, Fisheye Lens Camera, Long-wave Infrared Camera, Data Acquisition System, Solar Forecasting, Smart Grids, Sun-Tracking}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+    </div>
   
 
   
@@ -302,11 +732,11 @@
   © Copyright 2026
   Guillermo
   
-  Terrén-Serrano, Ph.D.. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+  Terrén-Serrano. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
   
   
-    Last updated: April 14, 2026.
+    Last updated: June 04, 2026.
   
 
     </div>

@@ -1,12 +1,12 @@
 ---
 layout: page
-title: projects
+title: Research
 permalink: /projects/
-description: Some of my ongoing work.
+description: 
 nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+display_categories: false
+horizontal: true
 ---
 
 <!-- pages/projects.md -->
@@ -23,13 +23,13 @@ horizontal: false
   {% if page.horizontal %}
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
+      {% for project in sorted_projects %}
+        {% include projects_horizontal.liquid %}
+      {% endfor %}
+    </div>>
   </div>
   {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
+  <div class="row row-cols-1 row-cols-md-2">
     {% for project in sorted_projects %}
       {% include projects.liquid %}
     {% endfor %}
@@ -48,7 +48,7 @@ horizontal: false
 {% if page.horizontal %}
 
   <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
+    <div class="row row-cols-3 row-cols-md-1">
     {% for project in sorted_projects %}
       {% include projects_horizontal.liquid %}
     {% endfor %}

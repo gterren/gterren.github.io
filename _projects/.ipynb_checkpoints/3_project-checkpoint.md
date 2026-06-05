@@ -1,28 +1,36 @@
 ---
 layout: page
-title: AI-Based Day-Ahead Energy Forecast
-description: Joint day-ahead probabilistic forecast of wind and solar electricity generation and demand 
-img: images/1_cover.png
-importance: 2
+title: Energy Meteorology
+description: Information fusion from multi-spectral sky imagers and weather sensors, using computer vision and deep learning, to improve solar generation nowcasting and coordinate real-time frequency response during cloud-driven variability in the generation.
+img: images/3_cover.png
+importance: 3
 category: work
+related_publications: true
+display_categories: false
 ---
 
-We developed a fully probabilistic day-ahead joint forecast of wind and solar electricity generation and demand. The <a href='https://www.nature.com/articles/s41467-026-69015-w'>article</a> is available online. The <a href='https://github.com/gterren/caiso_power'>software</a>, and <a href='https://github.com/gterren/caiso_power_viz'>visualization tools</a> are also public on GitHub repositories.
+`Girasol Machine` is a sky imager with far-infrared and multi-exposure capabilities in visible light (fisheye), mounted on a solar tracker so that the Sun remains centered in the sky images throughout the day. The sky imager has a noise-reduction software for the infrared images and an image fusion algorithm to merge fisheye sky images with different exposures. It produces low-noise infrared circumsolar images and high-dynamic-range all-sky images every 15 seconds {% cite TERRENSERRANO2021106914 %}. The `Girasol Machine` is equipped with a pyranometer.
 
-We presented our project at the ESIG 2025 Forecasting & Markets Workshop in Nashville.
+The <a href='https://doi.org/10.5061/dryad.zcrjdfn9m'>Girasol dataset</a> is publicly accessible in a Dryad repository. The dataset comprises 300 sample days of multi-exposure fisheye visible-light and far-infrared sky images and irradiance measurements from the `Girasol Machine`, collected in Albuquerque, NM, USA.
 
-<iframe src="/assets/pdf/ESIG2025_presentation.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/ESIG2025_presentation.pdf">Download PDF</a>
-</iframe>
+<div style="text-align:center;">
+  <img src="/assets/img/image_processing.jpg" width="80%">
+  <p style="font-size:14px; color:#555;">
+    Image processing embedded `Girasol Machine`: raw infrared image (left), atmospheric scatter radiation (middle), processed image (right).
+  </p>
+</div>
 
-We also attended the 2025 IEEE PES Grid Edge Technologies Conference & Exposition in San Diego to present the <a href='https://ieeexplore.ieee.org/abstract/document/10887459'>project</a>.
+Building on this hardware, we developed advanced signal and image processing methods to extract cloud dynamic features from synchronized sky images and irradiance measurements, enabling their integration into solar nowcasting and intra-hour forecasting frameworks {% cite TERRENSERRANO2023111968 %}. These methods include removing cyclostationary biases in irradiance signals, stabilizing infrared radiometric measurements, and using physics-informed machine-learning models to isolate atmospheric radiation and enhance cloud feature detection, ultimately improving forecast robustness and reducing operational costs.
 
-{% include figure.liquid loading="eager" path="images/flyer.png" title="Day-ahead demand forecast" class="img-fluid rounded z-depth-1" %}
+<div style="text-align:center;">
+  <img src="/assets/img/crosssection_plane.png" width="50%">
+  <p style="font-size:14px; color:#555;">
+    Geospatial reprojections to account for the curvature of the Earth from the image's perspective from the viewpoint. 
+  </p>
+</div>
 
-We went to the 2024 Macro-Energy Systems Workshop at Princeton University to present a poster.
+We also addressed the geometric distortions inherent to ground-based sky imaging systems by developing geospatial reprojection methods that transform image-plane coordinates into atmospheric cross-sections. These reprojections to account for the Earth's curvature enable more accurate estimation of cloud position, motion, and spatial extent, particularly for systems mounted on solar trackers where perspective evolves dynamically over time {% cite TERRENSERRANO2022 %}
 
-<iframe src="/assets/pdf/MES2024_poster.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/MES2024_poster.pdf">Download PDF</a>
-</iframe>
+This work is part of my Ph.D. dissertation at the University of New Mexico.
 
-This work is part of my 2023 CNSI Climate Innovation Fellowship at the University of California.
+

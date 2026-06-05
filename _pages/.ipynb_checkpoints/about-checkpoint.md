@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: Postdoctoral Researcher, <a href='https://www.ucsb.edu/'>University of California Santa Barbara</a>. 
+subtitle: "<span style=\"font-family: 'Source Sans Pro', sans-serif; font-size: 20px; font-weight: 400;\">Postdoctoral Researcher, <a href='https://www.ucsb.edu/'>University of California Santa Barbara</a></span>"
 
 profile:
   align: right
