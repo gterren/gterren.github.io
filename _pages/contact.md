@@ -6,24 +6,32 @@ description:
 nav: true
 nav_order: 6
 ---
- 
-<i class="fas fa-envelope"></i> [guillermoterren@ucsb.edu](mailto:guillermoterren@ucsb.edu)
 
-<!-- <i class="fas fa-phone"></i> (505) 450-6215 -->
+<div class="hero-banner">
+  <img src="{{ '/assets/img/banner-4.jpg' | relative_url }}"
+       alt="Contact Banner">
+</div>
 
-<i class="fas fa-university"></i> University of California Santa Barbara, Environmental Studies Program
+<div class="contact-grid">
 
-<i class="fas fa-building"></i> 4312 Bren Hall, UC Santa Barbara, Santa Barbara, CA 93106
+  <div class="contact-info">
+    <p><i class="fas fa-envelope"></i> <a href="mailto:guillermoterren@ucsb.edu">guillermoterren@ucsb.edu</a></p>
 
-<i class="fas fa-map-marker-alt"></i> B4344 floor 4L
+    <p><i class="fas fa-university"></i> University of California Santa Barbara, Environmental Studies Program</p>
 
-## Location
+    <p><i class="fas fa-building"></i> 4312 Bren Hall, UC Santa Barbara, Santa Barbara, CA 93106</p>
 
-<iframe
-  src="https://www.google.com/maps?q=Bren%20Hall%20UC%20Santa%20Barbara%20Santa%20Barbara%20CA%2093106-4160&output=embed"
-  width="100%"
-  height="450"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy">
-</iframe>
+    <p><i class="fas fa-map-marker-alt"></i> B4344 floor 4L</p>
+  </div>
+
+  <div class="contact-map">
+    <iframe
+      src="https://www.google.com/maps?q=Bren%20Hall%20UC%20Santa%20Barbara%20Santa%20Barbara%20CA%2093106-4160&output=embed"
+      width="100%"
+      height="350"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+</div>

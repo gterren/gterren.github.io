@@ -9,6 +9,12 @@ display_categories: false
 horizontal: true
 ---
 
+<div class="hero-banner">
+  <img src="{{ '/assets/img/banner-3.jpg' | relative_url }}"
+       alt="Contact Banner">
+</div>
+
+
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}

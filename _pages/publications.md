@@ -6,6 +6,10 @@ description: publications by categories in reversed chronological order.
 nav: true
 nav_order: 3
 ---
+<div class="hero-banner">
+  <img src="{{ '/assets/img/banner-2.jpg' | relative_url }}"
+       alt="Contact Banner">
+</div>
 
 <!-- _pages/publications.md -->
 
