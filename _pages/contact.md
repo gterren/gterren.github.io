@@ -8,7 +8,7 @@ nav_order: 6
 ---
 
 <div class="hero-banner">
-  <img src="{{ '/assets/img/banner-4.jpg' | relative_url }}"
+  <img src="{{ '/assets/img/banner-5.jpg' | relative_url }}"
        alt="Contact Banner">
 </div>
 

@@ -5,6 +5,7 @@ description: End-to-end solar nowcasting embedded pipeline within the Girasol Ma
 img: images/2_cover.png
 importance: 4
 category: work
+related_publications: true
 ---
 
 This project develops an end-to-end AI/ML framework for solar nowcasting (very short-term forecasting) using a real-time stream of infrared sky images from the Girasol system, enabling continuous extraction of cloud features and dynamic updating of intra-hour forecasts.

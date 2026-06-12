@@ -22,7 +22,7 @@
   
 </title>
 <meta name="author" content="Guillermo Terrén-Serrano">
-<meta name="description" content="Information fusion from multi-spectral sky imagers and weather sensors, using computer vision and deep learning, to improve solar generation nowcasting and coordinate real-time frequency response during cloud-driven variability in the generation.">
+<meta name="description" content="Information fusion from multispectral &lt;b&gt;&lt;i&gt;sky imagers&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;weather sensors&lt;/i&gt;&lt;/b&gt; using &lt;b&gt;&lt;i&gt;computer vision&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;AI/ML models&lt;/i&gt;&lt;/b&gt; to improve solar generation nowcasting and coordinate real-time frequency response during cloud-driven irradiance variability. Rapid solar ramps caused by passing clouds create power imbalances that challenge grid reliability. This research develops sensing and forecasting technologies that provide decision support during solar ramps, enabling more efficient deployment of balancing reserves and frequency response resources.">
 
   <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
@@ -258,7 +258,7 @@
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">Energy Meteorology</h1>
-    <p class="post-description">Information fusion from multi-spectral sky imagers and weather sensors, using computer vision and deep learning, to improve solar generation nowcasting and coordinate real-time frequency response during cloud-driven variability in the generation.</p>
+    <p class="post-description">Information fusion from multispectral <b><i>sky imagers</i></b> and <b><i>weather sensors</i></b> using <b><i>computer vision</i></b> and <b><i>AI/ML models</i></b> to improve solar generation nowcasting and coordinate real-time frequency response during cloud-driven irradiance variability. Rapid solar ramps caused by passing clouds create power imbalances that challenge grid reliability. This research develops sensing and forecasting technologies that provide decision support during solar ramps, enabling more efficient deployment of balancing reserves and frequency response resources.</p>
   </header>
 
   <article>
@@ -269,11 +269,11 @@
 <div style="text-align:center;">
   <img src="/assets/img/image_processing.jpg" width="80%">
   <p style="font-size:14px; color:#555;">
-    Image processing embedded `Girasol Machine`: raw infrared image (left), atmospheric scatter radiation (middle), processed image (right).
+    Image processing embedded Girasol Machine: raw infrared image (left), atmospheric scatter radiation (middle), processed image (right).
   </p>
 </div>
 
-<p>Building on this hardware, we developed advanced signal and image processing methods to extract cloud dynamic features from synchronized sky images and irradiance measurements, enabling their integration into solar nowcasting and intra-hour forecasting frameworks <a class="citation" href="#TERRENSERRANO2023111968">(Terrén-Serrano &amp; Martínez-Ramón, 2023)</a>. These methods include removing cyclostationary biases in irradiance signals, stabilizing infrared radiometric measurements, and using physics-informed machine-learning models to isolate atmospheric radiation and enhance cloud feature detection, ultimately improving forecast robustness and reducing operational costs.</p>
+<p>Building on this hardware, we developed advanced signal and image processing methods to extract cloud dynamics from synchronized sky images and irradiance measurements, enabling integration into solar nowcasting and intra-hour forecasting frameworks <a class="citation" href="#TERRENSERRANO2023111968">(Terrén-Serrano &amp; Martínez-Ramón, 2023)</a>. These methods include removing cyclostationary biases in irradiance signals, stabilizing infrared radiometric measurements, and using physics-informed machine-learning models to isolate atmospheric radiation and enhance cloud feature detection, ultimately improving forecast robustness and reducing operational costs.</p>
 
 <div style="text-align:center;">
   <img src="/assets/img/crosssection_plane.png" width="50%">
@@ -284,8 +284,39 @@
 
 <p>We also addressed the geometric distortions inherent to ground-based sky imaging systems by developing geospatial reprojection methods that transform image-plane coordinates into atmospheric cross-sections. These reprojections to account for the Earth’s curvature enable more accurate estimation of cloud position, motion, and spatial extent, particularly for systems mounted on solar trackers where perspective evolves dynamically over time <a class="citation" href="#TERRENSERRANO2022">(Terrén-Serrano &amp; Martínez-Ramón, 2022)</a></p>
 
-<p>This work is part of my Ph.D. dissertation at the University of New Mexico.</p>
+<p>This project develops an end-to-end AI/ML framework for solar nowcasting (very short-term forecasting) using a real-time stream of infrared sky images from the Girasol system, enabling continuous extraction of cloud features and dynamic updating of intra-hour forecasts.</p>
 
+<div style="text-align:center;">
+  <img src="/assets/img/workflow_solar_forecasting.jpg" width="90%">
+  <p style="font-size:14px; color:#555;">
+    End-to-end ML/AI pipeline for solar nowcasting using real-time infrared sky imaging and multi-sensor data fusion.
+  </p>
+</div>
+
+<p>The embedded architecture comprises three learning modules.</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Module 1 (Physics-informed learning):</code> Estimates and visualizes wind velocity fields from image streams, enabling prediction of cloud motion and Sun-occlusion events <a class="citation" href="#TERRENSERRANO2021116656">(Terrén-Serrano &amp; Martínez-Ramón, 2021)</a>.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Module 2 (Bayesian learning):</code> Detects clouds and associates each cloud to an estimated wind flow using mixture models in a Hidden Markov Chain <a class="citation" href="#TERRENSERRANO2023110628">(Terrén-Serrano &amp; Martínez-Ramón, 2023)</a>.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Module 3 (Probabilistic deep learning):</code> Fuses multi-sensor data—including sky images, weather station measurements, and pyranometer data to generate probabilistic forecasts of solar irradiance over 1–15 minute horizons <a class="citation" href="#TERRENSERRANO202342">(Terrén-Serrano &amp; Martínez-Ramón, 2023)</a>.</p>
+  </li>
+</ul>
+
+<div style="text-align:center;">
+  <img src="/assets/img/forecast.png" width="45%">
+  <p style="font-size:14px; color:#555;">
+    Forecasting event (bright green), very short-term probabilistic functional forecast (green), partially observed solar radiation (black), ground-truth unobserved radiation (red), persistence forecast (gray), and deterministic functional forecast orange.
+  </p>
+</div>
+
+<p>Together, these modules form a unified computational framework for accurate, real-time solar forecasting to support reliable power system operations under uncertainty.</p>
+
+<p>This work is part of my Ph.D. dissertation at the University of New Mexico <a class="citation" href="#terren2022intra">(Terrén-Serrano, 2022)</a>.</p>
 
   </article>
 
@@ -293,7 +324,8 @@
     <h2>References</h2>
     <div class="publications">
       <h2 class="bibliography">2023</h2>
-<ol class="bibliography"><li>
+<ol class="bibliography">
+<li>
 <div class="row">
   
     <div class="col col-sm-2 abbr">
@@ -335,7 +367,7 @@
     
     
     <div class="periodical">
-      <em>Solar Energy</em>,  2023
+      <em>Solar Energy</em>,  Jan 2023
     </div>
     <div class="periodical">
       
@@ -423,9 +455,273 @@
     
   </div>
 </div>
-</li></ol>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100" style="background-color:#9FE2BF">
+            
+              <div>JOURNAL</div>
+            
+          </abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="TERRENSERRANO2023110628" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Detection of clouds in multiple wind velocity fields using ground-based infrared sky images</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Guillermo
+            Terrén-Serrano</em>  and <a href="https://ece.unm.edu/faculty-staff/electrical-and-computer/manel-martinez-ramon.html" rel="external nofollow noopener" target="_blank">Manel
+              Martínez-Ramón</a>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Knowledge-Based Systems</em>,  Jan 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="https://doi.org/https://doi.org/10.1016/j.knosys.2023.110628" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+        
+          <a href="https://www.sciencedirect.com/science/article/pii/S0950705123003787" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+        <div class="badges">
+          
+          
+          
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=LSVOuPQAAAAJ&amp;citation_for_view=LSVOuPQAAAAJ:hqOjcs7Dif8C" aria-label="Google Scholar link" role="button" rel="external nofollow noopener" target="_blank">
+              <img src="https://img.shields.io/badge/scholar-14-4285F4?logo=googlescholar&amp;labelColor=beige" alt="14 Google Scholar citations">
+            </a>
+          
+          
+        </div>
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>To improve the performance of an intra-hour global solar irradiance forecasting algorithm, it is important to detect multiple layers of clouds. Horizontal atmospheric wind shear causes wind velocity fields to have different directions and speeds. In images of clouds acquired using ground-based sky imagers, clouds may be moving in different wind layers. The information provided by a solar forecasting algorithm is necessary to optimize and schedule the solar generation resources and storage devices in a smart grid. This investigation studies the performance of unsupervised learning techniques when detecting the number of cloud layers in infrared sky images. The images are acquired using an innovative infrared sky imager mounted on a solar tracker. Different mixture models are used to infer the distribution of the cloud features. Multiple Bayesian metrics and a sequential hidden Markov model are implemented to find the optimal number of clusters in the mixture models, and their performances are compared. The motion vectors are computed using a probabilistic implementation of the Lucas-Kanade algorithm. The correlations between the cloud motion vectors and temperatures are analyzed to discover the method that leads to the most accurate results. The findings point that a sequential hidden Markov model outperforms the detection accuracy of standard Bayesian model selection metrics.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">TERRENSERRANO2023110628</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Detection of clouds in multiple wind velocity fields using ground-based infrared sky images}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Knowledge-Based Systems}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{274}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{110628}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">issn</span> <span class="p">=</span> <span class="s">{0950-7051}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1016/j.knosys.2023.110628}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Terrén-Serrano, Guillermo and Martínez-Ramón, Manel}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{Cloud detection, Hidden Markov model, Mixture models, Sky imaging, Weighted Lucas-Kanade}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100" style="background-color:#9FE2BF">
+            
+              <div>JOURNAL</div>
+            
+          </abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="TERRENSERRANO202342" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Deep learning for intra-hour solar forecasting with fusion of features extracted from infrared sky images</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Guillermo
+            Terrén-Serrano</em>  and <a href="https://ece.unm.edu/faculty-staff/electrical-and-computer/manel-martinez-ramon.html" rel="external nofollow noopener" target="_blank">Manel
+              Martínez-Ramón</a>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Information Fusion</em>,  Jan 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="https://doi.org/https://doi.org/10.1016/j.inffus.2023.02.006" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+        
+          <a href="https://www.sciencedirect.com/science/article/pii/S1566253523000489" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+        <div class="badges">
+          
+          
+          
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=LSVOuPQAAAAJ&amp;citation_for_view=LSVOuPQAAAAJ:Zph67rFs4hoC" aria-label="Google Scholar link" role="button" rel="external nofollow noopener" target="_blank">
+              <img src="https://img.shields.io/badge/scholar-34-4285F4?logo=googlescholar&amp;labelColor=beige" alt="34 Google Scholar citations">
+            </a>
+          
+          
+        </div>
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>The increasing penetration of solar energy leaves power grids vulnerable to fluctuations in the solar radiation that reaches the surface of the Earth due to the projection of cloud shadows. Therefore, an intra-hour solar forecasting algorithm is necessary to reduce power instabilities caused by the impact of moving clouds on energy generation. The most accurate intra-hour solar forecasting methods apply convolutional neural networks to a series of visible light sky images. Instead, this investigation uses data acquired by a novel infrared sky imager on a solar tracker, which is capable of maintaining the Sun in the center of the images throughout the day and, at the same time, reducing the scattering effect produced by the Sun’s direct radiation. In addition, infrared sky images allow the derivation and extraction of physical cloud features. The cloud dynamics are analyzed in sequences of images to compute the probability of the Sun intercepting air parcels in the sky images (i.e., voxels). The method introduced in this investigation fuses sky condition information from multiple sensors (i.e., pyranometer, sky imager, solar tracker, weather station) and feature sources using a multi-task deep learning architecture based on recurrent neural networks. The proposed deterministic and Bayesian architectures reduce computation time by avoiding convolutional filters. The proposed intra-hour solar forecasting algorithm reached a forecast skill of 18.6% with a forecasting horizon of 8 min. Consequently, the proposed intra-hour solar forecasting method can potentially reduce the operational costs of power grids with high participation of solar energy.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">TERRENSERRANO202342</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Deep learning for intra-hour solar forecasting with fusion of features extracted from infrared sky images}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Information Fusion}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{95}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{42-61}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">issn</span> <span class="p">=</span> <span class="s">{1566-2535}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1016/j.inffus.2023.02.006}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Terrén-Serrano, Guillermo and Martínez-Ramón, Manel}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{Bayesian networks, Bayesian optimization, Deep learning, Girasol dataset, Solar forecasting, Sky imaging}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
 <h2 class="bibliography">2022</h2>
-<ol class="bibliography"><li>
+<ol class="bibliography">
+<li>
 <div class="row">
   
     <div class="col col-sm-2 abbr">
@@ -557,9 +853,135 @@
     
   </div>
 </div>
-</li></ol>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100" style="background-color:#89CFF0">
+            
+              <div>DISSERTATION</div>
+            
+          </abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="terren2022intra" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Intra-hour solar forecasting using cloud dynamics features extracted from ground-based infrared sky images</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Guillermo
+            Terrén-Serrano</em>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>The University of New Mexico</em>,   2022
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+        
+          <a href="https://digitalrepository.unm.edu/ece_etds/531" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+        <div class="badges">
+          
+          
+          
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=LSVOuPQAAAAJ&amp;citation_for_view=LSVOuPQAAAAJ:roLk4NBRz8UC" aria-label="Google Scholar link" role="button" rel="external nofollow noopener" target="_blank">
+              <img src="https://img.shields.io/badge/scholar-6-4285F4?logo=googlescholar&amp;labelColor=beige" alt="6 Google Scholar citations">
+            </a>
+          
+          
+        </div>
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Due to the increasing use of photovoltaic systems, power grids are vulnerable to the projection of shadows from moving clouds. An intra-hour solar forecast provides power grids with the capability of automatically controlling the dispatch of energy, reducing the additional cost for a guaranteed, reliable supply of energy (i.e., energy storage). This dissertation introduces a novel sky imager consisting of a long-wave radiometric infrared camera and a visible light camera with a fisheye lens. The imager is mounted on a solar tracker to maintain the Sun in the center of the images throughout the day, reducing the scattering effect produced by the Sun’s direct radiation. Features of the cloud dynamics are analyzed to compute the probability of the Sun intercepting air parcels in the sky images. Probabilistic and deterministic multi-task intra-hour solar forecasting algorithms are introduced, based on kernel and deep learning methods, to increase the penetration of photovoltaic systems in power grids.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@phdthesis</span><span class="p">{</span><span class="nl">terren2022intra</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Intra-hour solar forecasting using cloud dynamics features extracted from ground-based infrared sky images}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Terr{\'e}n-Serrano, Guillermo}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">school</span> <span class="p">=</span> <span class="s">{The University of New Mexico}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{computer vision, deep learning, kernel learning, machine learning, sky imaging, solar forecasting.}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
 <h2 class="bibliography">2021</h2>
-<ol class="bibliography"><li>
+<ol class="bibliography">
+<li>
 <div class="row">
   
     <div class="col col-sm-2 abbr">
@@ -703,7 +1125,139 @@
     
   </div>
 </div>
-</li></ol>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100" style="background-color:#9FE2BF">
+            
+              <div>JOURNAL</div>
+            
+          </abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="TERRENSERRANO2021116656" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Multi-layer wind velocity field visualization in infrared images of clouds for solar irradiance forecasting</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Guillermo
+            Terrén-Serrano</em>  and <a href="https://ece.unm.edu/faculty-staff/electrical-and-computer/manel-martinez-ramon.html" rel="external nofollow noopener" target="_blank">Manel
+              Martínez-Ramón</a>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Applied Energy</em>,   2021
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="https://doi.org/https://doi.org/10.1016/j.apenergy.2021.116656" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+        
+          <a href="https://www.sciencedirect.com/science/article/pii/S0306261921001860" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+        <div class="badges">
+          
+          
+          
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=LSVOuPQAAAAJ&amp;citation_for_view=LSVOuPQAAAAJ:ULOm3_A8WrAC" aria-label="Google Scholar link" role="button" rel="external nofollow noopener" target="_blank">
+              <img src="https://img.shields.io/badge/scholar-29-4285F4?logo=googlescholar&amp;labelColor=beige" alt="29 Google Scholar citations">
+            </a>
+          
+          
+        </div>
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>The energy available in a solar energy powered grid is uncertain due to the weather conditions at the time of generation. Forecasting global solar irradiance could address this problem by providing the power grid with the capability of scheduling the storage and dispatch of energy. The occlusion of the Sun by clouds is the main cause of instabilities in the generation of solar energy. This investigation proposes a method to visualize the wind velocity field in sequences of longwave infrared images of clouds when there are multiple wind velocity fields in an image. This method can be used to forecast the occlusion of the Sun by clouds, providing stability in the generation of solar energy. Unsupervised learning is implemented to infer the distribution of the clouds’ velocity vectors and heights in multiple wind velocity fields in an infrared image. A multi-output weighted support vector machine with flow constraints is used to extrapolate the wind velocity fields to the entire frame, visualizing the path of the clouds. The proposed method is capable of approximating the wind velocity field in a small air parcel using the velocity vectors and physical features of clouds extracted from infrared images. Assuming that the streamlines are pathlines, the visualization of the wind velocity field can be used for forecasting cloud occlusions of the Sun. This is of importance when considering ways of increasing the stability of solar energy generation.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">TERRENSERRANO2021116656</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Multi-layer wind velocity field visualization in infrared images of clouds for solar irradiance forecasting}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Applied Energy}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{288}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{116656}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">issn</span> <span class="p">=</span> <span class="s">{0306-2619}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1016/j.apenergy.2021.116656}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Terrén-Serrano, Guillermo and Martínez-Ramón, Manel}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{Cloud tracking, Machine learning, Flow visualization, Beta mixture model, Sky imaging, Solar forecasting}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
     </div>
   
 
