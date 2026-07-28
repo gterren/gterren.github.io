@@ -77,19 +77,25 @@ ninja.data = [{
           section: "News",},{id: "news-we-will-be-presenting-a-poster-in-the-next-2026-mes-workshop-at-the-georgia-institute-of-technology-in-atlanta-august-13-14",
           title: 'We will be presenting a poster in the next 2026 MES Workshop at...',
           description: "",
+          section: "News",},{id: "news-we-will-also-be-presenting-a-poster-at-the-powerup-2026-conference-happening-at-the-university-of-colorado-boulder-on-september-9-11",
+          title: 'We will also be presenting a poster at the PowerUp 2026 conference happening...',
+          description: "",
+          section: "News",},{id: "news-our-new-manuscript-affordable-low-carbon-electricity-pathways-for-india-under-uncertainty-is-available-on-arxiv-org-as-a-preprint",
+          title: 'Our new manuscript Affordable low-carbon electricity pathways for India under uncertainty is available...',
+          description: "",
           section: "News",},{id: "projects-energy-transition",
           title: 'Energy Transition',
-          description: "Towards a robust integrated resource planning framework for low-carbon electricity systems under uncertainty in demand growth, technology costs, and weather-dependent generation. This research links capacity expansion planning, production cost simulation, planning reserve margin estimation, capacity credit evaluation, and resource adequacy assessment to understand how investment and operational decisions affect power system reliability. This is increasingly important in capacity markets, where quantifying reliability contributions is necessary to ensure sufficient revenue to recover investment in low-carbon power systems.",
+          description: "Towards a robust integrated resource planning framework for low-carbon electricity systems operating under uncertainty in demand growth, technology costs, and weather-dependent generation. This research integrates capacity expansion planning, production cost simulation, planning reserve margin estimation, capacity credit evaluation, and resource adequacy assessment to characterize how investment and operational decisions jointly shape power system reliability.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-day-ahead-scheduling-and-operating-reserves",
           title: 'Day-ahead scheduling and operating reserves',
-          description: "Improving probabilistic day-ahead energy forecasts by combining numerical weather forecasts with AI/ML models, and reducing the complexity of stochastic unit commitment and economic dispatch models through scenario selection, to mitigate risks of energy curtailment, load shedding, and electricity price volatility. The goal is to dynamically determine operating reserve requirements by quantifying forecast uncertainty, supporting ancillary service procurement and headroom allocation in unit commitment decisions.",
+          description: "Improving probabilistic day-ahead energy forecasts by integrating numerical weather predictions with AI/ML models, and reducing the computational complexity of stochastic unit commitment and economic dispatch models through scenario selection, thereby mitigating the risks of energy curtailment, load shedding, and electricity price volatility. The goal is to dynamically determine operating reserve requirements by quantifying forecast uncertainty, thereby supporting ancillary service procurement and headroom allocation in unit commitment decisions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-energy-meteorology",
           title: 'Energy Meteorology',
-          description: "Information fusion from multispectral sky imagers and weather sensors using computer vision and AI/ML models to improve solar generation nowcasting and coordinate real-time frequency response during cloud-driven irradiance variability. Rapid solar ramps caused by passing clouds create power imbalances that challenge grid reliability. This research develops sensing and forecasting technologies that provide decision support during solar ramps, enabling more efficient deployment of balancing reserves and frequency response resources.",
+          description: "Fusing information from multispectral sky imagers and weather sensors using computer vision and AI/ML models to improve solar generation nowcasting and coordinate real-time frequency response under cloud-driven irradiance variability. Rapid solar ramps caused by passing clouds create power imbalances that challenge grid reliability. This research develops sensing and forecasting technologies that provide decision support during solar ramps, enabling more efficient deployment of balancing reserves and frequency response resources.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{
@@ -111,7 +117,7 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/guillermo-terr%C3%A9n-serrano-41136359/", "_blank");
+          window.open("https://www.linkedin.com/in/guillermo-terren-serrano-41136359", "_blank");
         },
       },{
         id: 'social-orcid',

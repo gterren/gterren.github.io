@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Energy Meteorology
-description: Information fusion from multispectral <b><i>sky imagers</i></b> and <b><i>weather sensors</i></b> using <b><i>computer vision</i></b> and <b><i>AI/ML models</i></b> to improve solar generation nowcasting and coordinate real-time frequency response during cloud-driven irradiance variability. Rapid solar ramps caused by passing clouds create power imbalances that challenge grid reliability. This research develops sensing and forecasting technologies that provide decision support during solar ramps, enabling more efficient deployment of balancing reserves and frequency response resources.
+description: Fusing information from multispectral <b><i>sky imagers</i></b> and <b><i>weather sensors</i></b> using <b><i>computer vision</i></b> and <b><i>AI/ML models</i></b> to improve solar generation nowcasting and coordinate real-time frequency response under cloud-driven irradiance variability. Rapid solar ramps caused by passing clouds create power imbalances that challenge grid reliability. This research develops sensing and forecasting technologies that provide decision support during solar ramps, enabling more efficient deployment of balancing reserves and frequency response resources.
 img: images/3_cover.png
 importance: 3
 category: work

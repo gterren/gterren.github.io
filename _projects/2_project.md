@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Day-ahead scheduling and operating reserves
-description: Improving probabilistic day-ahead energy forecasts by combining numerical weather forecasts with <b><i>AI/ML models</i></b>, and reducing the complexity of <b><i>stochastic unit commitment</i></b> and <b><i>economic dispatch</i></b> models through scenario selection, to mitigate risks of <b><i>energy curtailment</i></b>, <b><i>load shedding</i></b>, and electricity <b><i>price volatility</i></b>. The goal is to dynamically determine operating reserve requirements by quantifying forecast uncertainty, supporting ancillary service procurement and headroom allocation in unit commitment decisions.
+description: Improving probabilistic day-ahead energy forecasts by integrating numerical weather predictions with <b><i>AI/ML models</i></b>, and reducing the computational complexity of <b><i>stochastic unit commitment</i></b> and <b><i>economic dispatch</i></b> models through scenario selection, thereby mitigating the risks of <b><i>energy curtailment</i></b>, <b><i>load shedding</i></b>, and electricity <b><i>price volatility</i></b>. The goal is to dynamically determine operating reserve requirements by quantifying forecast uncertainty, thereby supporting ancillary service procurement and headroom allocation in unit commitment decisions.
 img: images/2_cover.png
 importance: 2
 category: work

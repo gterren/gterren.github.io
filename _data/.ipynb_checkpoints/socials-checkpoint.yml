@@ -1,4 +1,4 @@
-# this file contains the social media links and usernames of the author
+# This file contains the social media links and usernames of the author
 # the commented lines are the default social media links supported by the template
 # the socials will be displayed in the order they are defined here
 
@@ -16,11 +16,11 @@ github_username: gterren # your GitHub user name
 # inspirehep_id: 1010907 # Inspire HEP author ID
 # instagram_id: # your instagram id
 # kaggle_id: # your kaggle id
-# keybase_username: # your keybase user name
+# keybase_username: # your keybase username
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-linkedin_username: guillermo-terr%C3%A9n-serrano-41136359/ # your LinkedIn user name
+linkedin_username: guillermo-terren-serrano-41136359 # your LinkedIn username
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
 orcid_id: 0000-0002-8688-2299 # your ORCID ID
@@ -45,6 +45,10 @@ scholar_userid: LSVOuPQAAAAJ # your Google Scholar ID
 # x_username: # your X handle
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
+custom_social: # can be any name here other than the ones already defined above
+  logo: https://avatars.githubusercontent.com/u/48566538?s=200&v=4
+  title: ES
+  url: https://es.ucsb.edu/people/guillermo-terren-serrano
 custom_social: # can be any name here other than the ones already defined above
   logo: https://avatars.githubusercontent.com/u/48566538?s=200&v=4
   title: emLab
