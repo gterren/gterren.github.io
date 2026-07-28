@@ -16,7 +16,7 @@ nav_order: 6
 
   <div class="contact-info">
     <p class="contact-name">Guillermo Terrén-Serrano, Ph.D.</p>
-    <p class="contact-title">Postdoctoral Scholar, Environmental Studies Program</p>
+    <p class="contact-title">Postdoctoral Scholar, Environmental Markets (emLab) and Environmental Studies Program</p>
 
     <hr class="contact-divider">
 
