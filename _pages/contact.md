@@ -15,13 +15,20 @@ nav_order: 6
 <div class="contact-grid">
 
   <div class="contact-info">
+    <p class="contact-name">Guillermo Terrén-Serrano, Ph.D.</p>
+    <p class="contact-title">Postdoctoral Scholar, Environmental Studies Program</p>
+
+    <hr class="contact-divider">
+
+    <p><i class="fas fa-university"></i> University of California, Santa Barbara</p>
+
+    <p><i class="fas fa-building"></i> 4312 Bren Hall, Santa Barbara, CA 93106</p>
+
+    <p><i class="fas fa-map-marker-alt"></i> Office B4344, 4th Floor</p>
+
+    <hr class="contact-divider">
+
     <p><i class="fas fa-envelope"></i> <a href="mailto:guillermoterren@ucsb.edu">guillermoterren@ucsb.edu</a></p>
-
-    <p><i class="fas fa-university"></i> University of California Santa Barbara, Environmental Studies Program</p>
-
-    <p><i class="fas fa-building"></i> 4312 Bren Hall, UC Santa Barbara, Santa Barbara, CA 93106</p>
-
-    <p><i class="fas fa-map-marker-alt"></i> B4344 floor 4L</p>
   </div>
 
   <div class="contact-map">

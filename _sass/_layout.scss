@@ -57,6 +57,26 @@ body.sticky-bottom-footer {
 
 .contact-info {
   flex: 1;
+
+  .contact-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+  }
+
+  .contact-title {
+    font-style: italic;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-divider {
+    width: 60px;
+    margin: 1rem 0;
+    border: none;
+    border-top: 2px solid var(--global-theme-color);
+    opacity: 0.6;
+  }
 }
 
 .contact-map {

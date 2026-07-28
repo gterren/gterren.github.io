@@ -9,7 +9,7 @@ related_publications: true
 display_categories: false
 ---
 
-`Girasol Machine` is a sky imager with far-infrared and multi-exposure capabilities in visible light (fisheye), mounted on a solar tracker so that the Sun remains centered in the sky images throughout the day. The sky imager has a noise-reduction software for the infrared images and an image fusion algorithm to merge fisheye sky images with different exposures. It produces low-noise infrared circumsolar images and high-dynamic-range all-sky images every 15 seconds {% cite TERRENSERRANO2021106914 %}. The `Girasol Machine` is equipped with a pyranometer.
+`Girasol Machine` is a sky imager with far-infrared and multi-exposure visible-light (fisheye) capabilities, mounted on a solar tracker so that the Sun remains centered in the sky images throughout the day. The imager incorporates noise-reduction software for the infrared images and an image fusion algorithm that merges fisheye sky images captured at different exposures, producing low-noise infrared circumsolar images and high-dynamic-range all-sky images every 15 seconds {% cite TERRENSERRANO2021106914 %}. The `Girasol Machine` is also equipped with a pyranometer.
 
 The <a href='https://doi.org/10.5061/dryad.zcrjdfn9m'>Girasol dataset</a> is publicly accessible in a Dryad repository. The dataset comprises 300 sample days of multi-exposure fisheye visible-light and far-infrared sky images and irradiance measurements from the `Girasol Machine`, collected in Albuquerque, NM, USA.
 
@@ -25,11 +25,11 @@ Building on this hardware, we developed advanced signal and image processing met
 <div style="text-align:center;">
   <img src="/assets/img/crosssection_plane.png" width="50%">
   <p style="font-size:14px; color:#555;">
-    Geospatial reprojections to account for the curvature of the Earth from the image's perspective from the viewpoint. 
+    Geospatial reprojection accounting for the curvature of the Earth as seen from the imager's viewpoint.
   </p>
 </div>
 
-We also addressed the geometric distortions inherent to ground-based sky imaging systems by developing geospatial reprojection methods that transform image-plane coordinates into atmospheric cross-sections. These reprojections to account for the Earth's curvature enable more accurate estimation of cloud position, motion, and spatial extent, particularly for systems mounted on solar trackers where perspective evolves dynamically over time {% cite TERRENSERRANO2022 %}
+We also addressed the geometric distortions inherent to ground-based sky imaging systems by developing geospatial reprojection methods that transform image-plane coordinates into atmospheric cross-sections. These reprojections, which account for the Earth's curvature, enable more accurate estimation of cloud position, motion, and spatial extent, particularly for systems mounted on solar trackers where the perspective evolves dynamically over time {% cite TERRENSERRANO2022 %}.
 
 This project develops an end-to-end AI/ML framework for solar nowcasting (very short-term forecasting) using a real-time stream of infrared sky images from the Girasol system, enabling continuous extraction of cloud features and dynamic updating of intra-hour forecasts.
 
@@ -44,14 +44,14 @@ The embedded architecture comprises three learning modules.
 
 * `Module 1 (Physics-informed learning):` Estimates and visualizes wind velocity fields from image streams, enabling prediction of cloud motion and Sun-occlusion events {% cite TERRENSERRANO2021116656 %}.
 
-* `Module 2 (Bayesian learning):` Detects clouds and associates each cloud to an estimated wind flow using mixture models in a Hidden Markov Chain {% cite TERRENSERRANO2023110628 %}.
+* `Module 2 (Bayesian learning):` Detects clouds and associates each cloud with an estimated wind flow using mixture models within a Hidden Markov Model framework {% cite TERRENSERRANO2023110628 %}.
 
-* `Module 3 (Probabilistic deep learning):` Fuses multi-sensor data—including sky images, weather station measurements, and pyranometer data to generate probabilistic forecasts of solar irradiance over 1–15 minute horizons {% cite TERRENSERRANO202342 %}.
+* `Module 3 (Probabilistic deep learning):` Fuses multi-sensor data—including sky images, weather station measurements, and pyranometer data—to generate probabilistic forecasts of solar irradiance over 1–15 minute horizons {% cite TERRENSERRANO202342 %}.
 
 <div style="text-align:center;">
   <img src="/assets/img/forecast.png" width="45%">
   <p style="font-size:14px; color:#555;">
-    Forecasting event (bright green), very short-term probabilistic functional forecast (green), partially observed solar radiation (black), ground-truth unobserved radiation (red), persistence forecast (gray), and deterministic functional forecast orange.
+    Forecasting event (bright green), very short-term probabilistic functional forecast (green), partially observed solar radiation (black), ground-truth unobserved radiation (red), persistence forecast (gray), and deterministic functional forecast (orange).
   </p>
 </div>
 

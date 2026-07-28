@@ -85,7 +85,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-energy-transition",
           title: 'Energy Transition',
-          description: "Towards a robust integrated resource planning framework for low-carbon electricity systems operating under uncertainty in demand growth, technology costs, and weather-dependent generation. This research integrates capacity expansion planning, production cost simulation, planning reserve margin estimation, capacity credit evaluation, and resource adequacy assessment to characterize how investment and operational decisions jointly shape power system reliability.",
+          description: "Towards a robust integrated resource planning framework for low-carbon electricity systems operating under uncertainty in demand growth, technology costs, and weather-dependent generation. This research integrates capacity expansion planning, production cost simulation, planning reserve margin estimation, capacity credit evaluation, and resource adequacy assessment to characterize how investment and operational decisions jointly shape power system reliability. Such analysis is increasingly critical in capacity markets, where accurately quantifying reliability contributions is essential to ensuring adequate revenue for investment recovery in low-carbon power systems.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-day-ahead-scheduling-and-operating-reserves",
