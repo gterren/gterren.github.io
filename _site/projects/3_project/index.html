@@ -22,7 +22,7 @@
   
 </title>
 <meta name="author" content="Guillermo Terrén-Serrano">
-<meta name="description" content="Fusing information from multispectral &lt;b&gt;&lt;i&gt;sky imagers&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;weather sensors&lt;/i&gt;&lt;/b&gt; using &lt;b&gt;&lt;i&gt;computer vision&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;AI/ML models&lt;/i&gt;&lt;/b&gt; to improve solar generation nowcasting and coordinate real-time frequency response under cloud-driven irradiance variability. Rapid solar ramps caused by passing clouds create power imbalances that challenge grid reliability. This research develops sensing and forecasting technologies that provide decision support during solar ramps, enabling more efficient deployment of balancing reserves and frequency response resources.">
+<meta name="description" content="Fusing information from multispectral &lt;b&gt;&lt;i&gt;sky imagers&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;weather sensors&lt;/i&gt;&lt;/b&gt; using &lt;b&gt;&lt;i&gt;computer vision&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;AI/ML models&lt;/i&gt;&lt;/b&gt; to improve solar generation nowcasting and coordinate real-time frequency response under cloud-driven irradiance variability. Rapid solar ramps caused by passing clouds create power imbalances that challenge grid reliability. This research develops sensing and forecasting technologies that provide decision support during solar ramps, enabling more efficient deployment of balancing reserves and frequency response resources. This work is built on the &lt;b&gt;&lt;i&gt;Girasol Machine&lt;/i&gt;&lt;/b&gt;, a custom multi-exposure visible-light and far-infrared sky imaging system, together with a public benchmark dataset that supports the development and validation of these forecasting methods.">
 
   <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
@@ -258,18 +258,18 @@
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">Energy Meteorology</h1>
-    <p class="post-description">Fusing information from multispectral <b><i>sky imagers</i></b> and <b><i>weather sensors</i></b> using <b><i>computer vision</i></b> and <b><i>AI/ML models</i></b> to improve solar generation nowcasting and coordinate real-time frequency response under cloud-driven irradiance variability. Rapid solar ramps caused by passing clouds create power imbalances that challenge grid reliability. This research develops sensing and forecasting technologies that provide decision support during solar ramps, enabling more efficient deployment of balancing reserves and frequency response resources.</p>
+    <p class="post-description">Fusing information from multispectral <b><i>sky imagers</i></b> and <b><i>weather sensors</i></b> using <b><i>computer vision</i></b> and <b><i>AI/ML models</i></b> to improve solar generation nowcasting and coordinate real-time frequency response under cloud-driven irradiance variability. Rapid solar ramps caused by passing clouds create power imbalances that challenge grid reliability. This research develops sensing and forecasting technologies that provide decision support during solar ramps, enabling more efficient deployment of balancing reserves and frequency response resources. This work is built on the <b><i>Girasol Machine</i></b>, a custom multi-exposure visible-light and far-infrared sky imaging system, together with a public benchmark dataset that supports the development and validation of these forecasting methods.</p>
   </header>
 
   <article>
-    <p><code class="language-plaintext highlighter-rouge">Girasol Machine</code> is a sky imager with far-infrared and multi-exposure visible-light (fisheye) capabilities, mounted on a solar tracker so that the Sun remains centered in the sky images throughout the day. The imager incorporates noise-reduction software for the infrared images and an image fusion algorithm that merges fisheye sky images captured at different exposures, producing low-noise infrared circumsolar images and high-dynamic-range all-sky images every 15 seconds <a class="citation" href="#TERRENSERRANO2021106914">(Terrén-Serrano et al., 2021)</a>. The <code class="language-plaintext highlighter-rouge">Girasol Machine</code> is also equipped with a pyranometer.</p>
+    <p>The <em>Girasol Machine</em> is a sky imager with far-infrared and multi-exposure visible-light (fisheye) capabilities, mounted on a solar tracker so that the Sun remains centered in the sky images throughout the day. The imager incorporates noise-reduction software for the infrared images and an image fusion algorithm that merges fisheye sky images captured at different exposures, producing low-noise infrared circumsolar images and high-dynamic-range all-sky images every 15 seconds <a class="citation" href="#TERRENSERRANO2021106914">(Terrén-Serrano et al., 2021)</a>. The <em>Girasol Machine</em> is also equipped with a pyranometer.</p>
 
-<p>The <a href="https://doi.org/10.5061/dryad.zcrjdfn9m" rel="external nofollow noopener" target="_blank">Girasol dataset</a> is publicly accessible in a Dryad repository. The dataset comprises 300 sample days of multi-exposure fisheye visible-light and far-infrared sky images and irradiance measurements from the <code class="language-plaintext highlighter-rouge">Girasol Machine</code>, collected in Albuquerque, NM, USA.</p>
+<p>The <a href="https://doi.org/10.5061/dryad.zcrjdfn9m" rel="external nofollow noopener" target="_blank">Girasol dataset</a> is publicly accessible in a Dryad repository. The dataset comprises 300 sample days of multi-exposure fisheye visible-light and far-infrared sky images and irradiance measurements from the <em>Girasol Machine</em>, collected in Albuquerque, NM, USA.</p>
 
 <div style="text-align:center;">
   <img src="/assets/img/image_processing.jpg" width="80%">
   <p style="font-size:14px; color:#555;">
-    Image processing embedded Girasol Machine: raw infrared image (left), atmospheric scatter radiation (middle), processed image (right).
+    Image processing embedded in the Girasol Machine: raw infrared image (left), atmospheric scatter radiation (middle), processed image (right).
   </p>
 </div>
 
@@ -297,13 +297,13 @@
 
 <ul>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">Module 1 (Physics-informed learning):</code> Estimates and visualizes wind velocity fields from image streams, enabling prediction of cloud motion and Sun-occlusion events <a class="citation" href="#TERRENSERRANO2021116656">(Terrén-Serrano &amp; Martínez-Ramón, 2021)</a>.</p>
+    <p><strong>Module 1 (Physics-informed learning):</strong> Estimates and visualizes wind velocity fields from image streams, enabling prediction of cloud motion and Sun-occlusion events <a class="citation" href="#TERRENSERRANO2021116656">(Terrén-Serrano &amp; Martínez-Ramón, 2021)</a>.</p>
   </li>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">Module 2 (Bayesian learning):</code> Detects clouds and associates each cloud with an estimated wind flow using mixture models within a Hidden Markov Model framework <a class="citation" href="#TERRENSERRANO2023110628">(Terrén-Serrano &amp; Martínez-Ramón, 2023)</a>.</p>
+    <p><strong>Module 2 (Bayesian learning):</strong> Detects clouds and associates each cloud with an estimated wind flow using mixture models within a Hidden Markov Model framework <a class="citation" href="#TERRENSERRANO2023110628">(Terrén-Serrano &amp; Martínez-Ramón, 2023)</a>.</p>
   </li>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">Module 3 (Probabilistic deep learning):</code> Fuses multi-sensor data—including sky images, weather station measurements, and pyranometer data—to generate probabilistic forecasts of solar irradiance over 1–15 minute horizons <a class="citation" href="#TERRENSERRANO202342">(Terrén-Serrano &amp; Martínez-Ramón, 2023)</a>.</p>
+    <p><strong>Module 3 (Probabilistic deep learning):</strong> Fuses multi-sensor data—including sky images, weather station measurements, and pyranometer data—to generate probabilistic forecasts of solar irradiance over 1–15 minute horizons <a class="citation" href="#TERRENSERRANO202342">(Terrén-Serrano &amp; Martínez-Ramón, 2023)</a>.</p>
   </li>
 </ul>
 
@@ -1281,7 +1281,7 @@
 
   
   
-    Last updated: July 28, 2026.
+    Last updated: July 31, 2026.
   
 
     </div>

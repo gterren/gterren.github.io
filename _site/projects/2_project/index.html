@@ -17,12 +17,12 @@
   
   
     
-      Day-ahead scheduling and operating reserves | Guillermo Terrén-Serrano
+      Day-Ahead Scheduling and Operating Reserves | Guillermo Terrén-Serrano
     
   
 </title>
 <meta name="author" content="Guillermo Terrén-Serrano">
-<meta name="description" content="Improving probabilistic day-ahead energy forecasts by integrating numerical weather predictions with &lt;b&gt;&lt;i&gt;AI/ML models&lt;/i&gt;&lt;/b&gt;, and reducing the computational complexity of &lt;b&gt;&lt;i&gt;stochastic unit commitment&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;economic dispatch&lt;/i&gt;&lt;/b&gt; models through scenario selection, thereby mitigating the risks of &lt;b&gt;&lt;i&gt;energy curtailment&lt;/i&gt;&lt;/b&gt;, &lt;b&gt;&lt;i&gt;load shedding&lt;/i&gt;&lt;/b&gt;, and electricity &lt;b&gt;&lt;i&gt;price volatility&lt;/i&gt;&lt;/b&gt;. The goal is to dynamically determine operating reserve requirements by quantifying forecast uncertainty, thereby supporting ancillary service procurement and headroom allocation in unit commitment decisions.">
+<meta name="description" content="Improving probabilistic day-ahead energy forecasts by integrating numerical weather predictions with &lt;b&gt;&lt;i&gt;AI/ML models&lt;/i&gt;&lt;/b&gt;, and reducing the computational complexity of &lt;b&gt;&lt;i&gt;stochastic unit commitment&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;economic dispatch&lt;/i&gt;&lt;/b&gt; models through scenario selection to mitigate &lt;b&gt;&lt;i&gt;energy curtailment&lt;/i&gt;&lt;/b&gt;, &lt;b&gt;&lt;i&gt;load shedding&lt;/i&gt;&lt;/b&gt;, and price volatility. The goal is to dynamically determine operating reserve requirements by quantifying forecast uncertainty, thereby supporting ancillary service procurement and headroom allocation in unit commitment decisions.">
 
   <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
@@ -257,33 +257,18 @@
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">Day-ahead scheduling and operating reserves</h1>
-    <p class="post-description">Improving probabilistic day-ahead energy forecasts by integrating numerical weather predictions with <b><i>AI/ML models</i></b>, and reducing the computational complexity of <b><i>stochastic unit commitment</i></b> and <b><i>economic dispatch</i></b> models through scenario selection, thereby mitigating the risks of <b><i>energy curtailment</i></b>, <b><i>load shedding</i></b>, and electricity <b><i>price volatility</i></b>. The goal is to dynamically determine operating reserve requirements by quantifying forecast uncertainty, thereby supporting ancillary service procurement and headroom allocation in unit commitment decisions.</p>
+    <h1 class="post-title">Day-Ahead Scheduling and Operating Reserves</h1>
+    <p class="post-description">Improving probabilistic day-ahead energy forecasts by integrating numerical weather predictions with <b><i>AI/ML models</i></b>, and reducing the computational complexity of <b><i>stochastic unit commitment</i></b> and <b><i>economic dispatch</i></b> models through scenario selection to mitigate <b><i>energy curtailment</i></b>, <b><i>load shedding</i></b>, and price volatility. The goal is to dynamically determine operating reserve requirements by quantifying forecast uncertainty, thereby supporting ancillary service procurement and headroom allocation in unit commitment decisions.</p>
   </header>
 
   <article>
     <h4><b>Stochastic Unit Commitment and Economic Dispatch</b></h4>
 
-<p>We introduced a methodology that leverages statistical functional depth metrics to identify the most operationally risky scenarios—those likely to result in high generation costs, reserve shortfalls, load shedding, or renewable curtailment. Further details are available in <a class="citation" href="#TERRENSERRANO2025125747">(Terrén-Serrano &amp; Ludkovski, 2025)</a>.</p>
-
-<p>We presented this project at the <a href="https://www.arpae-summit.com" rel="external nofollow noopener" target="_blank">2024 ARPA-E Energy Innovation Summit</a> as part of Princeton University’s <a href="https://orfeus.princeton.edu" rel="external nofollow noopener" target="_blank">PERFORM team</a>.</p>
-<iframe src="/assets/pdf/TL_poster_arpa-e.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/TL_poster_arpa-e.pdf">Download PDF</a>
-</iframe>
-
-<p>This work is part of the ORFEUS team at Princeton University.</p>
+<p>We introduced a methodology that leverages statistical functional depth metrics to identify the most operationally risky scenarios—those likely to result in high generation costs, reserve shortfalls, load shedding, or renewable curtailment <a class="citation" href="#TERRENSERRANO2025125747">(Terrén-Serrano &amp; Ludkovski, 2025)</a>. Screening probabilistic scenarios before they enter stochastic unit commitment and economic dispatch models reduces their computational burden while preserving the risk information most relevant to grid operations. This work is conducted as part of the <a href="https://orfeus.princeton.edu" rel="external nofollow noopener" target="_blank">ORFEUS team</a> at Princeton University, within the ARPA-E PERFORM program.</p>
 
 <h4><b>Probabilistic Day-Ahead Energy Forecast</b></h4>
 
-<p>We developed a fully probabilistic day-ahead joint forecast of wind and solar electricity generation and demand <a class="citation" href="#terren2026probabilistic">(Terrén-Serrano et al., 2026)</a>. The <a href="https://www.nature.com/articles/s41467-026-69015-w" rel="external nofollow noopener" target="_blank">article</a> is available online, and the corresponding <a href="https://github.com/gterren/caiso_power" rel="external nofollow noopener" target="_blank">software</a> and <a href="https://github.com/gterren/caiso_power_viz" rel="external nofollow noopener" target="_blank">visualization tools</a> are publicly available on GitHub.</p>
-
-<p>We presented a poster at the 2024 Macro-Energy Systems Workshop at Princeton University.</p>
-
-<iframe src="/assets/pdf/MES2024_poster.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/MES2024_poster.pdf">Download PDF</a>
-</iframe>
-
-<p>We also presented this <a href="https://ieeexplore.ieee.org/abstract/document/10887459" rel="external nofollow noopener" target="_blank">project</a> at the 2025 IEEE PES Grid Edge Technologies Conference &amp; Exposition in San Diego <a class="citation" href="#TERRENSERRANO2025">(Terrén-Serrano et al., 2025)</a>.</p>
+<p>We developed a fully probabilistic day-ahead joint forecast of wind and solar electricity generation and demand, published in <a href="https://www.nature.com/articles/s41467-026-69015-w" rel="external nofollow noopener" target="_blank">Nature Communications</a> <a class="citation" href="#terren2026probabilistic">(Terrén-Serrano et al., 2026)</a>. Applied to the three zones of the California Independent System Operator, the best-performing model improves forecast skill by 25% relative to current benchmarks, and forecasts based on joint probability distributions enable a more effective allocation of operating reserves than conventional deterministic approaches. The corresponding <a href="https://github.com/gterren/caiso_power" rel="external nofollow noopener" target="_blank">software</a> and <a href="https://github.com/gterren/caiso_power_viz" rel="external nofollow noopener" target="_blank">visualization tools</a> are publicly available on GitHub.</p>
 
 <figure>
   <picture>
@@ -299,13 +284,23 @@
   
 </figure>
 
-<p>We presented our project at the ESIG 2025 Forecasting &amp; Markets Workshop in Nashville.</p>
+<p>This work was supported by my 2023 CNSI Climate Innovation Fellowship at the University of California, Santa Barbara.</p>
+
+<h4><b>Presentations</b></h4>
+
+<p>We have presented this research at the <a href="https://www.arpae-summit.com" rel="external nofollow noopener" target="_blank">2024 ARPA-E Energy Innovation Summit</a>, the 2024 Macro-Energy Systems Workshop at Princeton University, the 2025 IEEE PES Grid Edge Technologies <a href="https://ieeexplore.ieee.org/abstract/document/10887459" rel="external nofollow noopener" target="_blank">Conference &amp; Exposition</a> in San Diego <a class="citation" href="#TERRENSERRANO2025">(Terrén-Serrano et al., 2025)</a>, and the ESIG 2025 Forecasting &amp; Markets Workshop in Nashville.</p>
+
+<iframe src="/assets/pdf/TL_poster_arpa-e.pdf" width="100%" height="600px">
+    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/TL_poster_arpa-e.pdf">Download PDF</a>
+</iframe>
+
+<iframe src="/assets/pdf/MES2024_poster.pdf" width="100%" height="600px">
+    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/MES2024_poster.pdf">Download PDF</a>
+</iframe>
 
 <iframe src="/assets/pdf/ESIG2025_presentation.pdf" width="100%" height="600px">
     This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/ESIG2025_presentation.pdf">Download PDF</a>
 </iframe>
-
-<p>This work is part of my 2023 CNSI Climate Innovation Fellowship at the University of California.</p>
 
   </article>
 
@@ -733,7 +728,7 @@
 
   
   
-    Last updated: July 28, 2026.
+    Last updated: July 31, 2026.
   
 
     </div>

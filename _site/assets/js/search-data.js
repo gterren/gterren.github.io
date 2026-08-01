@@ -89,13 +89,13 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-day-ahead-scheduling-and-operating-reserves",
-          title: 'Day-ahead scheduling and operating reserves',
-          description: "Improving probabilistic day-ahead energy forecasts by integrating numerical weather predictions with AI/ML models, and reducing the computational complexity of stochastic unit commitment and economic dispatch models through scenario selection, thereby mitigating the risks of energy curtailment, load shedding, and electricity price volatility. The goal is to dynamically determine operating reserve requirements by quantifying forecast uncertainty, thereby supporting ancillary service procurement and headroom allocation in unit commitment decisions.",
+          title: 'Day-Ahead Scheduling and Operating Reserves',
+          description: "Improving probabilistic day-ahead energy forecasts by integrating numerical weather predictions with AI/ML models, and reducing the computational complexity of stochastic unit commitment and economic dispatch models through scenario selection to mitigate energy curtailment, load shedding, and price volatility. The goal is to dynamically determine operating reserve requirements by quantifying forecast uncertainty, thereby supporting ancillary service procurement and headroom allocation in unit commitment decisions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-energy-meteorology",
           title: 'Energy Meteorology',
-          description: "Fusing information from multispectral sky imagers and weather sensors using computer vision and AI/ML models to improve solar generation nowcasting and coordinate real-time frequency response under cloud-driven irradiance variability. Rapid solar ramps caused by passing clouds create power imbalances that challenge grid reliability. This research develops sensing and forecasting technologies that provide decision support during solar ramps, enabling more efficient deployment of balancing reserves and frequency response resources.",
+          description: "Fusing information from multispectral sky imagers and weather sensors using computer vision and AI/ML models to improve solar generation nowcasting and coordinate real-time frequency response under cloud-driven irradiance variability. Rapid solar ramps caused by passing clouds create power imbalances that challenge grid reliability. This research develops sensing and forecasting technologies that provide decision support during solar ramps, enabling more efficient deployment of balancing reserves and frequency response resources. This work is built on the Girasol Machine, a custom multi-exposure visible-light and far-infrared sky imaging system, together with a public benchmark dataset that supports the development and validation of these forecasting methods.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{
