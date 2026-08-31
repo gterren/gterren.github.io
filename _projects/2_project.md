@@ -12,7 +12,11 @@ display_categories: false
 
 <h4><b>Stochastic Unit Commitment and Economic Dispatch</b></h4>
 
-We introduced a methodology that leverages statistical functional depth metrics to identify the most operationally risky scenarios—those likely to result in high generation costs, reserve shortfalls, load shedding, or renewable curtailment {% cite TERRENSERRANO2025125747 %}. Screening probabilistic scenarios before they enter stochastic unit commitment and economic dispatch models reduces their computational burden while preserving the risk information most relevant to grid operations. This work is conducted as part of the <a href='https://orfeus.princeton.edu'>ORFEUS team</a> at Princeton University, within the ARPA-E PERFORM program.
+We introduced a methodology that leverages statistical functional depth metrics to identify the most operationally risky scenarios—those likely to result in high generation costs, reserve shortfalls, load shedding, or renewable curtailment {% cite TERRENSERRANO2025125747 %}. Screening probabilistic scenarios before they enter stochastic unit commitment and economic dispatch models reduces their computational burden while preserving the risk information most relevant to grid operations. This work is conducted as part of the <a href='https://orfeus.princeton.edu'>ORFEUS team</a> at Princeton University, within the ARPA-E PERFORM program, and was presented at the <a href='https://www.arpae-summit.com'>2024 ARPA-E Energy Innovation Summit</a>.
+
+<iframe src="/assets/pdf/ARPAE2024_poster.pdf" width="100%" height="600px">
+    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/ARPAE2024_poster.pdf">Download PDF</a>
+</iframe>
 
 <h4><b>Probabilistic Day-Ahead Energy Forecast</b></h4>
 
@@ -20,15 +24,7 @@ We developed a fully probabilistic day-ahead joint forecast of wind and solar el
 
 {% include figure.liquid loading="eager" path="images/flyer.png" title="Day-ahead demand forecast" class="img-fluid rounded z-depth-1" %}
 
-This work was supported by my 2023 CNSI Climate Innovation Fellowship at the University of California, Santa Barbara.
-
-<h4><b>Presentations</b></h4>
-
-We have presented this research at the <a href='https://www.arpae-summit.com'>2024 ARPA-E Energy Innovation Summit</a>, the 2024 Macro-Energy Systems Workshop at Princeton University, the 2025 IEEE PES Grid Edge Technologies <a href='https://ieeexplore.ieee.org/abstract/document/10887459'>Conference & Exposition</a> in San Diego {% cite TERRENSERRANO2025 %}, and the ESIG 2025 Forecasting & Markets Workshop in Nashville.
-
-<iframe src="/assets/pdf/TL_poster_arpa-e.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/TL_poster_arpa-e.pdf">Download PDF</a>
-</iframe>
+This work was supported by my 2023 CNSI Climate Innovation Fellowship at the University of California, Santa Barbara. We presented it at the 2024 Macro-Energy Systems Workshop at Princeton University, the 2025 IEEE PES Grid Edge Technologies <a href='https://ieeexplore.ieee.org/abstract/document/10887459'>Conference & Exposition</a> in San Diego {% cite TERRENSERRANO2025 %}, and the ESIG 2025 Forecasting & Markets Workshop in Nashville.
 
 <iframe src="/assets/pdf/MES2024_poster.pdf" width="100%" height="600px">
     This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/MES2024_poster.pdf">Download PDF</a>
