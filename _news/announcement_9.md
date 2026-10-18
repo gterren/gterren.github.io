@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our new manuscript <a href="https://arxiv.org/pdf/2610.17075">Nearest Neighbor Functional Curve Completion for Intraday Probabilistic Revisions of Renewable Generation Forecasts</a> is available on <strong>arXiv.org</strong> as a <strong>preprint</strong>!
+Our new <strong>preprint</strong> is out on <strong>arXiv.org</strong>! You can read <a href="https://arxiv.org/pdf/2610.17075">Nearest Neighbor Functional Curve Completion for Intraday Probabilistic Revisions of Renewable Generation Forecasts</a> online.
