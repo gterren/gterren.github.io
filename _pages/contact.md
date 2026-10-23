@@ -9,7 +9,7 @@ nav_order: 6
 
 <div class="hero-banner">
   <img src="{{ '/assets/img/banner-5.jpg' | relative_url }}"
-       alt="Contact Banner">
+       alt="An island on the horizon seen across the channel from a coastal bluff">
 </div>
 
 <div class="contact-grid">

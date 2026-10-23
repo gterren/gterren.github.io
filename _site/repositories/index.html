@@ -17,12 +17,12 @@
   
   
     
-      Repositories | Guillermo Terrén-Serrano
+      Software &amp; Data | Guillermo Terrén-Serrano
     
   
 </title>
 <meta name="author" content="Guillermo Terrén-Serrano">
-<meta name="description" content="public GitHub repositories.">
+<meta name="description" content="open-source code, models, and datasets behind the papers.">
 
   <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
@@ -205,6 +205,17 @@
             
           
             
+              
+                
+                <li class="nav-item active">
+                  <a class="nav-link" href="/repositories/">Software &amp; Data
+                    
+                      <span class="sr-only">(current)</span>
+                    
+                  </a>
+                </li>
+              
+            
           
             
               
@@ -257,57 +268,105 @@
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">Repositories</h1>
-    <p class="post-description">public GitHub repositories.</p>
+    <h1 class="post-title">Software &amp; Data</h1>
+    <p class="post-description">open-source code, models, and datasets behind the papers.</p>
   </header>
 
   <article>
+    <div class="hero-banner">
+  <img src="/assets/img/banner-6.jpg" alt="The Rio Grande cutting through a basalt gorge on the high desert plateau, northern New Mexico">
+</div>
+
+<h2 id="data-and-models">Data and models</h2>
+
+<div class="row row-cols-1 row-cols-md-2 data-cards">
+
+  <div class="col mb-4">
+    <a href="https://doi.org/10.5061/dryad.dz08kpsbm" rel="external nofollow noopener" target="_blank">
+      <div class="card h-100 hoverable">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
     
-<h2 id="github-users">GitHub users</h2>
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  
-    
-
-
-
-<div class="repo p-2 text-center">
-  <a href="https://github.com/gterren" rel="external nofollow noopener" target="_blank">
-    <img class="only-light w-100" alt="gterren" src="https://github-readme-stats.vercel.app/api/?username=gterren&amp;theme=default&amp;locale=en&amp;show_icons=true">
-    <img class="only-dark w-100" alt="gterren" src="https://github-readme-stats.vercel.app/api/?username=gterren&amp;theme=dark&amp;locale=en&amp;show_icons=true">
-  </a>
-</div>
+    <img src="/images/gridpath_india_framework.png" class="card-img-top" width="100%" height="auto" alt="Flow diagram of the GridPath-India modeling framework: demand projections and VRE, hydro, thermal and transmission availability factors feeding a capacity expansion model, with capacity credit and ELCC feedback, and a production cost model for economic dispatch" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
 
   
-</div>
+</figure>
 
-<hr>
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  <div class="repo p-2 text-center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy" rel="external nofollow noopener" target="_blank">
-    <span class="d-none d-sm-none d-md-block">
-      <img class="only-light" alt="gterren" src="https://github-profile-trophy.vercel.app/?username=gterren&amp;theme=flat&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C&amp;column=6">
-      <img class="only-dark" alt="gterren" src="https://github-profile-trophy.vercel.app/?username=gterren&amp;theme=gitdimmed&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C&amp;column=6">
-    </span>
-
-    <span class="d-none d-sm-block d-md-none">
-      <img class="only-light" alt="gterren" src="https://github-profile-trophy.vercel.app/?username=gterren&amp;theme=flat&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C&amp;column=4">
-      <img class="only-dark" alt="gterren" src="https://github-profile-trophy.vercel.app/?username=gterren&amp;theme=gitdimmed&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C&amp;column=4">
-    </span>
-
-    <span class="d-block d-sm-none">
-      <img class="only-light" alt="gterren" src="https://github-profile-trophy.vercel.app/?username=gterren&amp;theme=flat&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C&amp;column=3">
-      <img class="only-dark" alt="gterren" src="https://github-profile-trophy.vercel.app/?username=gterren&amp;theme=gitdimmed&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C&amp;column=3">
-    </span>
-  </a>
-</div>
-
+        <div class="card-body">
+          <h3 class="card-title">GridPath-India</h3>
+          <p class="card-text">
+            Capacity expansion and production cost model of India's electricity system, built on the
+            open-source GridPath platform. 34 load zones plus Bhutan, interstate transmission, and
+            hourly demand from linearly scaled and bottom-up profiles, with investment and
+            operations optimized across planning periods from 2020 to 2050. Includes more than 1,300 candidate wind and solar sites and project-level
+            capacity factors.
+          </p>
+          <p class="card-source">Dryad · 10.5061/dryad.dz08kpsbm</p>
+        </div>
+      </div>
+    </a>
   </div>
 
-<hr>
+  <div class="col mb-4">
+    <a href="https://doi.org/10.1016/j.dib.2021.106914" rel="external nofollow noopener" target="_blank">
+      <div class="card h-100 hoverable">
+        
 
-<h2 id="github-repositories">GitHub Repositories</h2>
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+    <img src="/images/girasol_sky_images.jpg" class="card-img-top" width="100%" height="auto" alt="Girasol sky images in four columns at different times: a short visible exposure, a long visible exposure, and the matching longwave infrared frame beneath" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+        <div class="card-body">
+          <h3 class="card-title">Girasol</h3>
+          <p class="card-text">
+            A sky imaging and global solar irradiance dataset. Longwave infrared and
+            multi-exposure visible-light sky images with matching pyranometer measurements, recorded
+            every 15 seconds by the Girasol Machine on a solar tracker, for intra-hour solar
+            forecasting.
+          </p>
+          <p class="card-source">Data in Brief · 10.1016/j.dib.2021.106914</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+<style>
+  .data-cards a { color: inherit; text-decoration: none; }
+  .data-cards .card-img-top { aspect-ratio: 16 / 9; object-fit: cover; width: 100%; }
+  .data-cards .card-title { margin-bottom: .5rem; }
+  .data-cards .card-source {
+    margin: .75rem 0 0;
+    font-size: .8rem;
+    letter-spacing: .03em;
+    color: var(--global-text-color-light);
+  }
+</style>
+
+<h2 id="code-repositories">Code repositories</h2>
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   
@@ -466,6 +525,7 @@
   
 </div>
 
+
   </article>
 
   
@@ -486,11 +546,11 @@
   © Copyright 2026
   Guillermo
   
-  Terrén-Serrano. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+  Terrén-Serrano. Photographs on this site are my own. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
   
   
-    Last updated: October 18, 2026.
+    Last updated: October 22, 2026.
   
 
     </div>

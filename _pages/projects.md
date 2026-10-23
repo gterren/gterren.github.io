@@ -11,7 +11,7 @@ horizontal: true
 
 <div class="hero-banner">
   <img src="{{ '/assets/img/banner-3.jpg' | relative_url }}"
-       alt="Contact Banner">
+       alt="Waves breaking over tilted rock strata on a rugged Pacific coastline">
 </div>
 
 
