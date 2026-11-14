@@ -18,7 +18,7 @@ nav_order: 3
 {% include bib_search.liquid %}
 
 <p class="pub-metrics">
-  563 citations, h-index 11, i10-index 12 as of November 2026, from
+  565 citations, h-index 12, i10-index 12 as of 14 November 2026, from
   <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar</a>.
   Code and data links below point to the repository or archive behind each paper.
 </p>
