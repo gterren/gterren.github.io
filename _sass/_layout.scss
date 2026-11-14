@@ -122,7 +122,7 @@ body.sticky-bottom-footer {
   border-radius: 8px;
   background-color: var(--global-card-bg-color);
 
-  h4 {
+  .job-market-label {
     font-family: 'Inter', sans-serif;
     font-size: 0.78rem;
     font-weight: 600;
@@ -155,4 +155,12 @@ body.sticky-bottom-footer {
       }
     }
   }
+}
+
+/* Citation totals line on the publications page */
+.pub-metrics {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  margin: -0.25rem 0 1.5rem;
 }

@@ -36,10 +36,11 @@ Trained as an electrical engineer in power systems and artificial intelligence/m
 I am a Postdoctoral Scholar in the Energy Program at the <a href='https://emlab.ucsb.edu/'>Environmental Markets Lab (emLab)</a> and the <a href='https://es.ucsb.edu/'>Environmental Studies Program</a> at the University of California, Santa Barbara, where I collaborate with the <a href='https://www.2035initiative.com/'>2035 Initiative</a> at the <a href='https://iee.ucsb.edu/'>Institute for Energy Efficiency</a> and the SCiFI team in the <a href='https://www.pstat.ucsb.edu/'>Department of Statistics and Applied Probability</a>. My research has appeared in leading science and engineering journals, including *Nature Communications*, *Renewable & Sustainable Energy Reviews*, *Information Fusion*, and *IEEE Transactions on Geoscience and Remote Sensing*. I received my Ph.D. from the <a href='http://www.ece.unm.edu/'>Electrical and Computer Engineering Department</a> at the <a href='https://www.unm.edu/'>University of New Mexico</a> and my undergraduate degree from the <a href='https://www.unizar.es/'>Universidad de Zaragoza</a>. My doctoral studies were supported by the Avangrid (Iberdrola) Foundation–King Felipe VI of Spain Doctoral Scholarship, and I was later awarded the <a href='https://www.cnsi.ucsb.edu/'>California NanoSystems Institute</a>'s <a href='https://www.cnsi.ucsb.edu/programs/climate-innovation-fellows'>2023 Climate Innovation Postdoctoral Fellowship</a>. I regularly serve as a research mentor for undergraduate students at UCSB.
 
 <div class="job-market">
-  <h4>On the 2026&ndash;27 academic job market</h4>
+  <div class="job-market-label">On the 2026&ndash;27 academic job market</div>
   <p>I am looking for a tenure-track position starting in Fall 2027, where I plan to start the
-  <b>Weather, Climate, and Power Systems Lab (WCPS)</b>, a group working on probabilistic forecasting
-  and stochastic optimization for the planning and operation of low-carbon electricity systems.</p>
+  <b>Weather, Climate, and Power Systems Lab (WCPS)</b>, a group working on AI/ML, probabilistic
+  forecasting, and stochastic optimization for the planning and operation of low-carbon
+  electricity systems.</p>
   <p class="job-market-links">
     <a href="{{ '/assets/pdf/cv.pdf' | relative_url }}">CV</a>
     <a href="{{ '/assets/pdf/Research_Statement.pdf' | relative_url }}">Research statement</a>
