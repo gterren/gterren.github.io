@@ -538,10 +538,104 @@ footer.sticky-bottom {
 
 // Repositories
 
-@media (min-width: 768px) {
-  .repo {
+.repositories {
+  row-gap: 0.25rem;
+}
+
+.repo {
+  width: 100%;
+  display: flex;
+
+  @media (min-width: 768px) {
     max-width: 50%;
+    flex: 0 0 50%;
   }
+}
+
+.repo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background-color: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  text-align: left;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+}
+
+.repo-card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--global-theme-color);
+  word-break: break-word;
+
+  i {
+    color: var(--global-text-color-light);
+  }
+}
+
+.repo-card-archived {
+  padding: 0.05rem 0.4rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+}
+
+.repo-card-description {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--repo-desc-lines, 2);
+  line-clamp: var(--repo-desc-lines, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--global-text-color-light);
+}
+
+.repo-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: auto;
+  padding-top: 0.15rem;
+  font-size: 0.75rem;
+  color: var(--global-text-color-light);
+}
+
+.repo-card-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.repo-card-lang-dot {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
 }
 
 // Blog

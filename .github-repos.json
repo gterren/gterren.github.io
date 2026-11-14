@@ -1,0 +1,113 @@
+{
+  "fetched_at": "2026-11-14T19:31:18Z",
+  "repos": {
+    "gterren/caiso_power": {
+      "full_name": "gterren/caiso_power",
+      "name": "caiso_power",
+      "owner": "gterren",
+      "description": null,
+      "language": "Python",
+      "stars": 1,
+      "forks": 1,
+      "archived": false,
+      "html_url": "https://github.com/gterren/caiso_power",
+      "pushed_at": "2026-01-05T18:31:51Z"
+    },
+    "gterren/caiso_power_viz": {
+      "full_name": "gterren/caiso_power_viz",
+      "name": "caiso_power_viz",
+      "owner": "gterren",
+      "description": "Visualization companion to caiso_power",
+      "language": "Jupyter Notebook",
+      "stars": 1,
+      "forks": 0,
+      "archived": false,
+      "html_url": "https://github.com/gterren/caiso_power_viz",
+      "pushed_at": "2026-01-05T18:29:22Z"
+    },
+    "gterren/cloud_segmentation": {
+      "full_name": "gterren/cloud_segmentation",
+      "name": "cloud_segmentation",
+      "owner": "gterren",
+      "description": "Codes for cloud segmentation in ground-based infrared sky images",
+      "language": "Python",
+      "stars": 8,
+      "forks": 1,
+      "archived": false,
+      "html_url": "https://github.com/gterren/cloud_segmentation",
+      "pushed_at": "2022-08-19T02:31:47Z"
+    },
+    "gterren/deep_learning_intra-hour_solar_forecasting": {
+      "full_name": "gterren/deep_learning_intra-hour_solar_forecasting",
+      "name": "deep_learning_intra-hour_solar_forecasting",
+      "owner": "gterren",
+      "description": null,
+      "language": "Python",
+      "stars": 3,
+      "forks": 0,
+      "archived": false,
+      "html_url": "https://github.com/gterren/deep_learning_intra-hour_solar_forecasting",
+      "pushed_at": "2022-08-19T02:50:28Z"
+    },
+    "gterren/geospatial_perspective_reprojection": {
+      "full_name": "gterren/geospatial_perspective_reprojection",
+      "name": "geospatial_perspective_reprojection",
+      "owner": "gterren",
+      "description": "This repository contains the Jupyter notebooks used in the development of the Geospatial Perspective Transformations for ground-based sky imagers",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "html_url": "https://github.com/gterren/geospatial_perspective_reprojection",
+      "pushed_at": "2022-08-19T02:29:21Z"
+    },
+    "gterren/girasol_machine": {
+      "full_name": "gterren/girasol_machine",
+      "name": "girasol_machine",
+      "owner": "gterren",
+      "description": "Codes for the data adquistion process running in the Girasol Machine.",
+      "language": "Jupyter Notebook",
+      "stars": 1,
+      "forks": 0,
+      "archived": false,
+      "html_url": "https://github.com/gterren/girasol_machine",
+      "pushed_at": "2022-08-19T19:52:39Z"
+    },
+    "gterren/kernel_intra-hour_solar_forecasting": {
+      "full_name": "gterren/kernel_intra-hour_solar_forecasting",
+      "name": "kernel_intra-hour_solar_forecasting",
+      "owner": "gterren",
+      "description": null,
+      "language": "Python",
+      "stars": 5,
+      "forks": 0,
+      "archived": false,
+      "html_url": "https://github.com/gterren/kernel_intra-hour_solar_forecasting",
+      "pushed_at": "2022-08-19T03:02:10Z"
+    },
+    "gterren/multiple_cloud_dection_and_segmentation": {
+      "full_name": "gterren/multiple_cloud_dection_and_segmentation",
+      "name": "multiple_cloud_dection_and_segmentation",
+      "owner": "gterren",
+      "description": "Mixture models implemented for the detection of clouds when flowing in different wind velocity fields",
+      "language": "Python",
+      "stars": 2,
+      "forks": 1,
+      "archived": false,
+      "html_url": "https://github.com/gterren/multiple_cloud_dection_and_segmentation",
+      "pushed_at": "2022-08-19T20:10:23Z"
+    },
+    "gterren/multiple_velocity_fields_visualization": {
+      "full_name": "gterren/multiple_velocity_fields_visualization",
+      "name": "multiple_velocity_fields_visualization",
+      "owner": "gterren",
+      "description": "Files for the cross-validation of the SVM and GPR for flow approximation when clouds are flowing in one wind velocity field or two different wind velocity fields",
+      "language": "Python",
+      "stars": 1,
+      "forks": 1,
+      "archived": false,
+      "html_url": "https://github.com/gterren/multiple_velocity_fields_visualization",
+      "pushed_at": "2022-08-19T02:31:34Z"
+    }
+  }
+}
