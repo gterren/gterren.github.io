@@ -218,3 +218,144 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+/*****************************
+ * CV page (rendered from _data/cv.yml by _layouts/resume.html)
+ *****************************/
+
+.cv-page {
+  .cv-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+
+  .cv-updated {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    color: var(--global-text-color-light);
+  }
+
+  .cv-section {
+    margin-top: 2.2rem;
+  }
+
+  .cv-section-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    color: var(--global-text-color);
+  }
+
+  .cv-text {
+    margin-bottom: 0.6rem;
+  }
+
+  .cv-map {
+    width: 100%;
+    margin-bottom: 0;
+
+    th {
+      width: 150px;
+      padding: 0.15rem 0.75rem 0.15rem 0;
+      font-weight: 600;
+      vertical-align: top;
+    }
+
+    td {
+      padding: 0.15rem 0;
+    }
+  }
+
+  .cv-list {
+    margin: 0.25rem 0 0;
+    padding-left: 1.1rem;
+
+    li {
+      margin-bottom: 0.15rem;
+    }
+  }
+
+  // Research interests read better as a compact inline set than a bullet column
+  .cv-section-research-interests .cv-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.5rem;
+
+    li {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      padding: 0.15rem 0.6rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 12px;
+      color: var(--global-text-color-light);
+      margin-bottom: 0;
+    }
+  }
+
+  .cv-group {
+    margin-bottom: 0.9rem;
+  }
+
+  .cv-group-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.2rem;
+  }
+
+  .cv-entry {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 0 1.2rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .cv-entry-year {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    line-height: 1.9;
+    white-space: nowrap;
+    color: var(--global-text-color-light);
+  }
+
+  .cv-entry-title {
+    font-weight: 600;
+  }
+
+  .cv-entry-institution {
+    font-size: 0.92rem;
+    color: var(--global-text-color-light);
+  }
+
+  .cv-entry-description {
+    margin-top: 0.2rem;
+    font-size: 0.92rem;
+  }
+
+  @media (max-width: 768px) {
+    .cv-entry {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .cv-entry-year {
+      line-height: 1.5;
+      margin-bottom: 0.1rem;
+    }
+
+    .cv-map th {
+      width: 110px;
+    }
+  }
+}

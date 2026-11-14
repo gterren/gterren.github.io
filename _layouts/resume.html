@@ -2,37 +2,98 @@
 layout: default
 ---
 <!-- _layouts/resume.html -->
-<div class="post">
-
-  <p class="cv-download">
-    <a class="btn btn-sm z-depth-0" role="button"
-       href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank" rel="noopener">
-      Download CV (PDF)
-    </a>
-  </p>
-
-  <object class="cv-embed"
-          data="{{ '/assets/pdf/cv.pdf' | relative_url }}#pagemode=none"
-          type="application/pdf">
-    <p>
-      Your browser can't display the embedded PDF.
-      <a href="{{ '/assets/pdf/cv.pdf' | relative_url }}">Download the CV</a> instead.
+<div class="post cv-page">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="cv-actions">
+      <a class="btn btn-sm z-depth-0" role="button"
+         href="{{ page.cv_pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank" rel="noopener">
+        Download CV (PDF)
+      </a>
+      <span class="cv-updated">Last updated {{ site.time | date: '%B %Y' }}</span>
     </p>
-  </object>
+  </header>
 
+  <article>
+    {% for section in site.data.cv %}
+      <section class="cv-section cv-section-{{ section.title | slugify }}">
+        <h2 class="cv-section-title">{{ section.title }}</h2>
+
+        {% case section.type %}
+          {% when 'text' %}
+            {% for paragraph in section.contents %}
+              <p class="cv-text">{{ paragraph }}</p>
+            {% endfor %}
+
+          {% when 'map' %}
+            <table class="cv-map">
+              {% for row in section.contents %}
+                <tr>
+                  <th>{{ row.name }}</th>
+                  <td>{{ row.value }}</td>
+                </tr>
+              {% endfor %}
+            </table>
+
+          {% when 'list' %}
+            <ul class="cv-list">
+              {% for item in section.contents %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+
+          {% when 'nested_list' %}
+            {% for group in section.contents %}
+              <div class="cv-group">
+                <h3 class="cv-group-title">{{ group.title }}</h3>
+                <ul class="cv-list">
+                  {% for item in group.items %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+
+          {% when 'time_table' %}
+            {% for entry in section.contents %}
+              <div class="cv-entry">
+                <div class="cv-entry-year">{{ entry.year }}</div>
+                <div class="cv-entry-body">
+                  <div class="cv-entry-title">{{ entry.title }}</div>
+                  {% if entry.institution %}
+                    <div class="cv-entry-institution">{{ entry.institution }}</div>
+                  {% endif %}
+                  {% if entry.description %}
+                    <ul class="cv-list cv-entry-description">
+                      {% for line in entry.description %}
+                        {% if line.title %}
+                          <li>
+                            {{ line.title }}
+                            <ul class="cv-list">
+                              {% for sub in line.contents %}
+                                <li>{{ sub }}</li>
+                              {% endfor %}
+                            </ul>
+                          </li>
+                        {% else %}
+                          <li>{{ line }}</li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+        {% endcase %}
+      </section>
+    {% endfor %}
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Publications</h2>
+      <p class="cv-text">
+        A complete and continuously updated list, with links to papers, code, and data, is on the
+        <a href="{{ '/publications/' | relative_url }}">publications page</a>.
+      </p>
+    </section>
+  </article>
 </div>
-
-<style>
-  .cv-download { margin-bottom: 1rem; }
-  .cv-embed {
-    width: 100%;
-    max-width: 750px;
-    height: 1000px;
-    border: 1px solid var(--global-divider-color);
-  }
-  @media (max-width: 768px) {
-    /* phones and most tablets won't render an embedded PDF at all;
-       hide the empty box and let the download button do the work */
-    .cv-embed { display: none; }
-  }
-</style>
